@@ -1,0 +1,4781 @@
+{
+  "name": "oel72",
+  "normal": {
+    "tags": [
+
+    ]
+  },
+  "default": {
+    "inventory": {
+      "group": "oinstall",
+      "owner": "oracle",
+      "oraInst": "/root/oraInst.loc",
+      "location": "/u01/app/oraInventory"
+    },
+    "weblogic": {
+      "owner": "oracle",
+      "user": "oracle",
+      "group": "oinstall",
+      "java": {
+        "mx": "1024m"
+      },
+      "mw_home": "/u01/app/oracle/product/fmw12.2.1",
+      "install_type": "Fusion Middleware Infrastructure With Examples",
+      "response_file": "/root/install_weblogic.rsp",
+      "inventory_pointer_file": "/root/oraInst.loc",
+      "install_image": "/vagrant_data/wls1221/fmw_12.2.1.0.0_infrastructure.jar"
+    }
+  },
+  "automatic": {
+    "cpu": {
+      "0": {
+        "vendor_id": "GenuineIntel",
+        "family": "6",
+        "model": "58",
+        "model_name": "Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz",
+        "stepping": "9",
+        "mhz": "2594.110",
+        "cache_size": "3072 KB",
+        "physical_id": "0",
+        "core_id": "0",
+        "cores": "1",
+        "flags": [
+          "fpu",
+          "vme",
+          "de",
+          "pse",
+          "tsc",
+          "msr",
+          "pae",
+          "mce",
+          "cx8",
+          "apic",
+          "sep",
+          "mtrr",
+          "pge",
+          "mca",
+          "cmov",
+          "pat",
+          "pse36",
+          "clflush",
+          "mmx",
+          "fxsr",
+          "sse",
+          "sse2",
+          "syscall",
+          "nx",
+          "rdtscp",
+          "lm",
+          "constant_tsc",
+          "rep_good",
+          "nopl",
+          "xtopology",
+          "nonstop_tsc",
+          "pni",
+          "pclmulqdq",
+          "monitor",
+          "ssse3",
+          "cx16",
+          "sse4_1",
+          "sse4_2",
+          "popcnt",
+          "aes",
+          "xsave",
+          "avx",
+          "rdrand",
+          "hypervisor",
+          "lahf_lm"
+        ]
+      },
+      "total": 1,
+      "real": 1,
+      "cores": 1
+    },
+    "filesystem": {
+      "/dev/mapper/ol-root": {
+        "kb_size": "43977748",
+        "kb_used": "5153104",
+        "kb_available": "38824644",
+        "percent_used": "12%",
+        "mount": "/",
+        "total_inodes": "43999232",
+        "inodes_used": "129757",
+        "inodes_available": "43869475",
+        "inodes_percent_used": "1%",
+        "fs_type": "xfs",
+        "mount_options": [
+          "rw",
+          "relatime",
+          "seclabel",
+          "attr2",
+          "inode64",
+          "noquota"
+        ],
+        "uuid": "365ae7f5-5eea-4193-ad0a-a6154dd56ade"
+      },
+      "devtmpfs": {
+        "kb_size": "498428",
+        "kb_used": "0",
+        "kb_available": "498428",
+        "percent_used": "0%",
+        "mount": "/dev",
+        "total_inodes": "124607",
+        "inodes_used": "329",
+        "inodes_available": "124278",
+        "inodes_percent_used": "1%",
+        "fs_type": "devtmpfs",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "seclabel",
+          "size=498428k",
+          "nr_inodes=124607",
+          "mode=755"
+        ]
+      },
+      "tmpfs": {
+        "kb_size": "101688",
+        "kb_used": "0",
+        "kb_available": "101688",
+        "percent_used": "0%",
+        "mount": "/run/user/1000",
+        "total_inodes": "127107",
+        "inodes_used": "1",
+        "inodes_available": "127106",
+        "inodes_percent_used": "1%",
+        "fs_type": "tmpfs",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "nodev",
+          "relatime",
+          "seclabel",
+          "size=101688k",
+          "mode=700",
+          "uid=1000",
+          "gid=1000"
+        ]
+      },
+      "/dev/mapper/ol-home": {
+        "kb_size": "21468936",
+        "kb_used": "32976",
+        "kb_available": "21435960",
+        "percent_used": "1%",
+        "mount": "/home",
+        "total_inodes": "21479424",
+        "inodes_used": "18",
+        "inodes_available": "21479406",
+        "inodes_percent_used": "1%",
+        "fs_type": "xfs",
+        "mount_options": [
+          "rw",
+          "relatime",
+          "seclabel",
+          "attr2",
+          "inode64",
+          "noquota"
+        ],
+        "uuid": "a435e965-b2b0-4722-876e-6813d3556cf9"
+      },
+      "/dev/sda1": {
+        "kb_size": "508588",
+        "kb_used": "236432",
+        "kb_available": "272156",
+        "percent_used": "47%",
+        "mount": "/boot",
+        "total_inodes": "512000",
+        "inodes_used": "349",
+        "inodes_available": "511651",
+        "inodes_percent_used": "1%",
+        "fs_type": "xfs",
+        "mount_options": [
+          "rw",
+          "relatime",
+          "seclabel",
+          "attr2",
+          "inode64",
+          "noquota"
+        ],
+        "uuid": "c710c23c-1bd4-4188-abb4-8de21a5052eb"
+      },
+      "vagrant": {
+        "kb_size": "341867516",
+        "kb_used": "128961088",
+        "kb_available": "212906428",
+        "percent_used": "38%",
+        "mount": "/vagrant",
+        "total_inodes": "1000",
+        "inodes_used": "0",
+        "inodes_available": "1000",
+        "inodes_percent_used": "0%"
+      },
+      "vagrant_data": {
+        "kb_size": "341867516",
+        "kb_used": "128961088",
+        "kb_available": "212906428",
+        "percent_used": "38%",
+        "mount": "/vagrant_data",
+        "total_inodes": "1000",
+        "inodes_used": "0",
+        "inodes_available": "1000",
+        "inodes_percent_used": "0%"
+      },
+      "sysfs": {
+        "mount": "/sys",
+        "fs_type": "sysfs",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "nodev",
+          "noexec",
+          "relatime",
+          "seclabel"
+        ]
+      },
+      "proc": {
+        "mount": "/proc",
+        "fs_type": "proc",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "nodev",
+          "noexec",
+          "relatime"
+        ]
+      },
+      "securityfs": {
+        "mount": "/sys/kernel/security",
+        "fs_type": "securityfs",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "nodev",
+          "noexec",
+          "relatime"
+        ]
+      },
+      "devpts": {
+        "mount": "/dev/pts",
+        "fs_type": "devpts",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "noexec",
+          "relatime",
+          "seclabel",
+          "gid=5",
+          "mode=620",
+          "ptmxmode=000"
+        ]
+      },
+      "cgroup": {
+        "mount": "/sys/fs/cgroup/cpuset",
+        "fs_type": "cgroup",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "nodev",
+          "noexec",
+          "relatime",
+          "cpuset"
+        ]
+      },
+      "pstore": {
+        "mount": "/sys/fs/pstore",
+        "fs_type": "pstore",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "nodev",
+          "noexec",
+          "relatime"
+        ]
+      },
+      "configfs": {
+        "mount": "/sys/kernel/config",
+        "fs_type": "configfs",
+        "mount_options": [
+          "rw",
+          "relatime"
+        ]
+      },
+      "selinuxfs": {
+        "mount": "/sys/fs/selinux",
+        "fs_type": "selinuxfs",
+        "mount_options": [
+          "rw",
+          "relatime"
+        ]
+      },
+      "systemd-1": {
+        "mount": "/proc/sys/fs/binfmt_misc",
+        "fs_type": "autofs",
+        "mount_options": [
+          "rw",
+          "relatime",
+          "fd=28",
+          "pgrp=1",
+          "timeout=300",
+          "minproto=5",
+          "maxproto=5",
+          "direct"
+        ]
+      },
+      "debugfs": {
+        "mount": "/sys/kernel/debug",
+        "fs_type": "debugfs",
+        "mount_options": [
+          "rw",
+          "relatime"
+        ]
+      },
+      "mqueue": {
+        "mount": "/dev/mqueue",
+        "fs_type": "mqueue",
+        "mount_options": [
+          "rw",
+          "relatime",
+          "seclabel"
+        ]
+      },
+      "hugetlbfs": {
+        "mount": "/dev/hugepages",
+        "fs_type": "hugetlbfs",
+        "mount_options": [
+          "rw",
+          "relatime",
+          "seclabel"
+        ]
+      },
+      "binfmt_misc": {
+        "mount": "/proc/sys/fs/binfmt_misc",
+        "fs_type": "binfmt_misc",
+        "mount_options": [
+          "rw",
+          "relatime"
+        ]
+      },
+      "sunrpc": {
+        "mount": "/var/lib/nfs/rpc_pipefs",
+        "fs_type": "rpc_pipefs",
+        "mount_options": [
+          "rw",
+          "relatime"
+        ]
+      },
+      "nfsd": {
+        "mount": "/proc/fs/nfsd",
+        "fs_type": "nfsd",
+        "mount_options": [
+          "rw",
+          "relatime"
+        ]
+      },
+      "/vagrant": {
+        "mount": "/vagrant",
+        "fs_type": "vboxsf",
+        "mount_options": [
+          "rw",
+          "nodev",
+          "relatime"
+        ]
+      },
+      "/vagrant_data": {
+        "mount": "/vagrant_data",
+        "fs_type": "vboxsf",
+        "mount_options": [
+          "rw",
+          "nodev",
+          "relatime"
+        ]
+      },
+      "/dev/sda2": {
+        "fs_type": "LVM2_member",
+        "uuid": "0ySAON-dUwd-zw8k-l0mr-BIkR-j3C3-ao94Rg"
+      },
+      "/dev/mapper/ol-swap": {
+        "fs_type": "swap",
+        "uuid": "d21ae819-5b33-4c9d-99f4-18c50c30038d"
+      },
+      "rootfs": {
+        "mount": "/",
+        "fs_type": "rootfs",
+        "mount_options": [
+          "rw"
+        ]
+      }
+    },
+    "kernel": {
+      "name": "Linux",
+      "release": "3.10.0-327.18.2.el7.x86_64",
+      "version": "#1 SMP Thu May 12 06:01:33 PDT 2016",
+      "machine": "x86_64",
+      "processor": "x86_64",
+      "os": "GNU/Linux",
+      "modules": {
+        "vboxsf": {
+          "size": "39741",
+          "refcount": "2"
+        },
+        "crc32_pclmul": {
+          "size": "13113",
+          "refcount": "0"
+        },
+        "ghash_clmulni_intel": {
+          "size": "13259",
+          "refcount": "0"
+        },
+        "ppdev": {
+          "size": "17671",
+          "refcount": "0"
+        },
+        "aesni_intel": {
+          "size": "69884",
+          "refcount": "0"
+        },
+        "lrw": {
+          "size": "13286",
+          "refcount": "1"
+        },
+        "pcspkr": {
+          "size": "12718",
+          "refcount": "0"
+        },
+        "gf128mul": {
+          "size": "14951",
+          "refcount": "1"
+        },
+        "glue_helper": {
+          "size": "13990",
+          "refcount": "1"
+        },
+        "ablk_helper": {
+          "size": "13597",
+          "refcount": "1"
+        },
+        "cryptd": {
+          "size": "20359",
+          "refcount": "3"
+        },
+        "sg": {
+          "size": "40721",
+          "refcount": "0"
+        },
+        "parport_pc": {
+          "size": "28165",
+          "refcount": "0"
+        },
+        "parport": {
+          "size": "42348",
+          "refcount": "2"
+        },
+        "i2c_piix4": {
+          "size": "22106",
+          "refcount": "0"
+        },
+        "i2c_core": {
+          "size": "40582",
+          "refcount": "1"
+        },
+        "vboxguest": {
+          "size": "297222",
+          "refcount": "2"
+        },
+        "video": {
+          "size": "24400",
+          "refcount": "0"
+        },
+        "nfsd": {
+          "size": "302351",
+          "refcount": "1"
+        },
+        "auth_rpcgss": {
+          "size": "59314",
+          "refcount": "1"
+        },
+        "nfs_acl": {
+          "size": "12837",
+          "refcount": "1"
+        },
+        "lockd": {
+          "size": "93572",
+          "refcount": "1"
+        },
+        "grace": {
+          "size": "13288",
+          "refcount": "2"
+        },
+        "sunrpc": {
+          "size": "300421",
+          "refcount": "7"
+        },
+        "binfmt_misc": {
+          "size": "17468",
+          "refcount": "1"
+        },
+        "ip_tables": {
+          "size": "27240",
+          "refcount": "0"
+        },
+        "xfs": {
+          "size": "939662",
+          "refcount": "3"
+        },
+        "libcrc32c": {
+          "size": "12644",
+          "refcount": "1"
+        },
+        "sd_mod": {
+          "size": "45497",
+          "refcount": "3"
+        },
+        "crc_t10dif": {
+          "size": "12714",
+          "refcount": "1"
+        },
+        "crct10dif_generic": {
+          "size": "12647",
+          "refcount": "0"
+        },
+        "ata_generic": {
+          "size": "12910",
+          "refcount": "0"
+        },
+        "pata_acpi": {
+          "size": "13038",
+          "refcount": "0"
+        },
+        "crct10dif_pclmul": {
+          "size": "14289",
+          "refcount": "1"
+        },
+        "crct10dif_common": {
+          "size": "12595",
+          "refcount": "3"
+        },
+        "ahci": {
+          "size": "29907",
+          "refcount": "2"
+        },
+        "crc32c_intel": {
+          "size": "22079",
+          "refcount": "1"
+        },
+        "libahci": {
+          "size": "32031",
+          "refcount": "1"
+        },
+        "ata_piix": {
+          "size": "35038",
+          "refcount": "0"
+        },
+        "serio_raw": {
+          "size": "13462",
+          "refcount": "0"
+        },
+        "libata": {
+          "size": "218730",
+          "refcount": "5"
+        },
+        "e1000": {
+          "size": "149323",
+          "refcount": "0"
+        },
+        "dm_mirror": {
+          "size": "22135",
+          "refcount": "0"
+        },
+        "dm_region_hash": {
+          "size": "20862",
+          "refcount": "1"
+        },
+        "dm_log": {
+          "size": "18411",
+          "refcount": "2"
+        },
+        "dm_mod": {
+          "size": "113292",
+          "refcount": "11"
+        }
+      }
+    },
+    "memory": {
+      "swap": {
+        "cached": "0kB",
+        "total": "1048572kB",
+        "free": "1048572kB"
+      },
+      "total": "1016860kB",
+      "free": "107188kB",
+      "buffers": "0kB",
+      "cached": "674084kB",
+      "active": "443580kB",
+      "inactive": "373916kB",
+      "dirty": "1424kB",
+      "writeback": "0kB",
+      "anon_pages": "143408kB",
+      "mapped": "11896kB",
+      "slab": "63896kB",
+      "slab_reclaimable": "41024kB",
+      "slab_unreclaim": "22872kB",
+      "page_tables": "4584kB",
+      "nfs_unstable": "0kB",
+      "bounce": "0kB",
+      "commit_limit": "1557000kB",
+      "committed_as": "452128kB",
+      "vmalloc_total": "34359738367kB",
+      "vmalloc_used": "22084kB",
+      "vmalloc_chunk": "34359706104kB"
+    },
+    "network": {
+      "interfaces": {
+        "lo": {
+          "mtu": "65536",
+          "flags": [
+            "LOOPBACK",
+            "UP",
+            "LOWER_UP"
+          ],
+          "encapsulation": "Loopback",
+          "addresses": {
+            "127.0.0.1": {
+              "family": "inet",
+              "prefixlen": "8",
+              "netmask": "255.0.0.0",
+              "scope": "Node"
+            },
+            "::1": {
+              "family": "inet6",
+              "prefixlen": "128",
+              "scope": "Node"
+            }
+          },
+          "state": "unknown",
+          "routes": [
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            }
+          ]
+        },
+        "enp0s3": {
+          "type": "enp0s",
+          "number": "3",
+          "mtu": "1500",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST",
+            "UP",
+            "LOWER_UP"
+          ],
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "08:00:27:F2:ED:59": {
+              "family": "lladdr"
+            },
+            "10.0.2.15": {
+              "family": "inet",
+              "prefixlen": "24",
+              "netmask": "255.255.255.0",
+              "broadcast": "10.0.2.255",
+              "scope": "Global"
+            },
+            "fe80::a00:27ff:fef2:ed59": {
+              "family": "inet6",
+              "prefixlen": "64",
+              "scope": "Link"
+            }
+          },
+          "state": "up",
+          "arp": {
+            "10.0.2.3": "52:54:00:12:35:03",
+            "10.0.2.2": "52:54:00:12:35:02"
+          },
+          "routes": [
+            {
+              "destination": "default",
+              "family": "inet",
+              "via": "10.0.2.2",
+              "metric": "100",
+              "proto": "static"
+            },
+            {
+              "destination": "10.0.2.0/24",
+              "family": "inet",
+              "scope": "link",
+              "metric": "100",
+              "proto": "kernel",
+              "src": "10.0.2.15"
+            },
+            {
+              "destination": "fe80::/64",
+              "family": "inet6",
+              "metric": "256",
+              "proto": "kernel"
+            }
+          ],
+          "link_speed": 1000,
+          "duplex": "Full",
+          "port": "Twisted Pair",
+          "transceiver": "internal",
+          "auto_negotiation": "on",
+          "mdi_x": "off (auto)"
+        },
+        "enp0s8": {
+          "type": "enp0s",
+          "number": "8",
+          "mtu": "1500",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST",
+            "UP",
+            "LOWER_UP"
+          ],
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "08:00:27:3F:19:36": {
+              "family": "lladdr"
+            },
+            "192.168.33.10": {
+              "family": "inet",
+              "prefixlen": "24",
+              "netmask": "255.255.255.0",
+              "broadcast": "192.168.33.255",
+              "scope": "Global"
+            },
+            "fe80::a00:27ff:fe3f:1936": {
+              "family": "inet6",
+              "prefixlen": "64",
+              "scope": "Link"
+            }
+          },
+          "state": "up",
+          "routes": [
+            {
+              "destination": "192.168.33.0/24",
+              "family": "inet",
+              "scope": "link",
+              "proto": "kernel",
+              "src": "192.168.33.10"
+            },
+            {
+              "destination": "fe80::/64",
+              "family": "inet6",
+              "metric": "256",
+              "proto": "kernel"
+            }
+          ],
+          "link_speed": 1000,
+          "duplex": "Full",
+          "port": "Twisted Pair",
+          "transceiver": "internal",
+          "auto_negotiation": "on",
+          "mdi_x": "off (auto)"
+        }
+      },
+      "default_interface": "enp0s3",
+      "default_gateway": "10.0.2.2"
+    },
+    "counters": {
+      "network": {
+        "interfaces": {
+          "lo": {
+            "rx": {
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            },
+            "tx": {
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            }
+          },
+          "enp0s3": {
+            "tx": {
+              "queuelen": "1000",
+              "bytes": "328314",
+              "packets": "2960",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            },
+            "rx": {
+              "bytes": "439647",
+              "packets": "5188",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            }
+          },
+          "enp0s8": {
+            "tx": {
+              "queuelen": "1000",
+              "bytes": "1566",
+              "packets": "21",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            },
+            "rx": {
+              "bytes": "1789",
+              "packets": "11",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            }
+          }
+        }
+      }
+    },
+    "ipaddress": "10.0.2.15",
+    "macaddress": "08:00:27:F2:ED:59",
+    "ip6address": "fe80::a00:27ff:fe3f:1936",
+    "os": "linux",
+    "os_version": "3.10.0-327.18.2.el7.x86_64",
+    "lsb": {
+
+    },
+    "platform": "oracle",
+    "platform_version": "7.2",
+    "platform_family": "rhel",
+    "uptime_seconds": 2214,
+    "uptime": "36 minutes 54 seconds",
+    "idletime_seconds": 2002,
+    "idletime": "33 minutes 22 seconds",
+    "virtualization": {
+      "systems": {
+        "vbox": "guest"
+      },
+      "system": "vbox",
+      "role": "guest"
+    },
+    "languages": {
+      "c": {
+        "gcc": {
+          "version": "4.8.5",
+          "description": "gcc version 4.8.5 20150623 (Red Hat 4.8.5-4) (GCC) "
+        },
+        "glibc": {
+          "version": "2.17",
+          "description": "GNU C Library (GNU libc) stable release version 2.17, by Roland McGrath et al."
+        }
+      },
+      "go": {
+        "version": "1.6.2"
+      },
+      "java": {
+        "version": "1.8.0_92",
+        "runtime": {
+          "name": "Java(TM) SE Runtime Environment",
+          "build": "1.8.0_92-b14"
+        },
+        "hotspot": {
+          "name": "Java HotSpot(TM) 64-Bit Server VM",
+          "build": "25.92-b14, mixed mode"
+        }
+      },
+      "lua": {
+        "version": "5.1.4"
+      },
+      "perl": {
+        "version": "5.16.3",
+        "archname": "x86_64-linux-thread-multi"
+      },
+      "python": {
+        "version": "2.7.5",
+        "builddate": "Nov 21 2015, 00:39:04"
+      },
+      "ruby": {
+        "platform": "x86_64-linux",
+        "version": "2.1.8",
+        "release_date": "2015-12-16",
+        "target": "x86_64-pc-linux-gnu",
+        "target_cpu": "x86_64",
+        "target_vendor": "pc",
+        "target_os": "linux",
+        "host": "x86_64-pc-linux-gnu",
+        "host_cpu": "x86_64",
+        "host_os": "linux-gnu",
+        "host_vendor": "pc",
+        "bin_dir": "/opt/chefdk/embedded/bin",
+        "ruby_bin": "/opt/chefdk/embedded/bin/ruby",
+        "gems_dir": "/opt/chefdk/embedded/lib/ruby/gems/2.1.0",
+        "gem_bin": "/opt/chefdk/embedded/bin/gem"
+      }
+    },
+    "chef_packages": {
+      "chef": {
+        "version": "12.10.24",
+        "chef_root": "/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/chef-12.10.24/lib"
+      },
+      "ohai": {
+        "version": "8.16.0",
+        "ohai_root": "/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.16.0/lib/ohai"
+      }
+    },
+    "dmi": {
+      "dmidecode_version": "2.12",
+      "smbios_version": "2.5",
+      "structures": {
+        "count": "10",
+        "size": "450"
+      },
+      "table_location": "0x000E1000",
+      "bios": {
+        "all_records": [
+          {
+            "record_id": "0x0000",
+            "size": "0",
+            "application_identifier": "BIOS Information",
+            "Vendor": "innotek GmbH",
+            "Version": "VirtualBox",
+            "Release Date": "12/01/2006",
+            "Address": "0xE0000",
+            "Runtime Size": "128 kB",
+            "ROM Size": "128 kB",
+            "Characteristics": {
+              "ISA is supported": null,
+              "PCI is supported": null,
+              "Boot from CD is supported": null,
+              "Selectable boot is supported": null,
+              "8042 keyboard services are supported (int 9h)": null,
+              "CGA/mono video services are supported (int 10h)": null,
+              "ACPI is supported": null
+            }
+          }
+        ],
+        "vendor": "innotek GmbH",
+        "version": "VirtualBox",
+        "release_date": "12/01/2006",
+        "address": "0xE0000",
+        "runtime_size": "128 kB",
+        "rom_size": "128 kB"
+      },
+      "system": {
+        "all_records": [
+          {
+            "record_id": "0x0001",
+            "size": "1",
+            "application_identifier": "System Information",
+            "Manufacturer": "innotek GmbH",
+            "Product Name": "VirtualBox",
+            "Version": "1.2",
+            "Serial Number": "0",
+            "UUID": "99942145-383A-4A22-90EF-DC65C700E9E3",
+            "Wake-up Type": "Power Switch",
+            "SKU Number": "Not Specified",
+            "Family": "Virtual Machine"
+          }
+        ],
+        "manufacturer": "innotek GmbH",
+        "product_name": "VirtualBox",
+        "version": "1.2",
+        "serial_number": "0",
+        "uuid": "99942145-383A-4A22-90EF-DC65C700E9E3",
+        "wake_up_type": "Power Switch",
+        "sku_number": "Not Specified",
+        "family": "Virtual Machine"
+      },
+      "base_board": {
+        "all_records": [
+          {
+            "record_id": "0x0008",
+            "size": "2",
+            "application_identifier": "Base Board Information",
+            "Manufacturer": "Oracle Corporation",
+            "Product Name": "VirtualBox",
+            "Version": "1.2",
+            "Serial Number": "0",
+            "Asset Tag": "Not Specified",
+            "Features": {
+              "Board is a hosting board": null
+            },
+            "Location In Chassis": "Not Specified",
+            "Chassis Handle": "0x0003",
+            "Type": "Motherboard",
+            "Contained Object Handles": "0"
+          }
+        ],
+        "manufacturer": "Oracle Corporation",
+        "product_name": "VirtualBox",
+        "version": "1.2",
+        "serial_number": "0",
+        "asset_tag": "Not Specified",
+        "location_in_chassis": "Not Specified",
+        "chassis_handle": "0x0003",
+        "type": "Motherboard",
+        "contained_object_handles": "0"
+      },
+      "chassis": {
+        "all_records": [
+          {
+            "record_id": "0x0003",
+            "size": "3",
+            "application_identifier": "Chassis Information",
+            "Manufacturer": "Oracle Corporation",
+            "Type": "Other",
+            "Lock": "Not Present",
+            "Version": "Not Specified",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Boot-up State": "Safe",
+            "Power Supply State": "Safe",
+            "Thermal State": "Safe",
+            "Security Status": "None"
+          }
+        ],
+        "manufacturer": "Oracle Corporation",
+        "type": "Other",
+        "lock": "Not Present",
+        "version": "Not Specified",
+        "serial_number": "Not Specified",
+        "asset_tag": "Not Specified",
+        "boot_up_state": "Safe",
+        "power_supply_state": "Safe",
+        "thermal_state": "Safe",
+        "security_status": "None"
+      },
+      "oem_strings": {
+        "all_records": [
+          {
+            "record_id": "0x0002",
+            "size": "11",
+            "application_identifier": "OEM Strings",
+            "String 1": "vboxVer_5.0.20",
+            "String 2": "vboxRev_106931"
+          }
+        ],
+        "string_1": "vboxVer_5.0.20",
+        "string_2": "vboxRev_106931"
+      }
+    },
+    "etc": {
+      "passwd": {
+        "root": {
+          "dir": "/root",
+          "gid": 0,
+          "uid": 0,
+          "shell": "/bin/bash",
+          "gecos": "root"
+        },
+        "bin": {
+          "dir": "/bin",
+          "gid": 1,
+          "uid": 1,
+          "shell": "/sbin/nologin",
+          "gecos": "bin"
+        },
+        "daemon": {
+          "dir": "/sbin",
+          "gid": 2,
+          "uid": 2,
+          "shell": "/sbin/nologin",
+          "gecos": "daemon"
+        },
+        "adm": {
+          "dir": "/var/adm",
+          "gid": 4,
+          "uid": 3,
+          "shell": "/sbin/nologin",
+          "gecos": "adm"
+        },
+        "lp": {
+          "dir": "/var/spool/lpd",
+          "gid": 7,
+          "uid": 4,
+          "shell": "/sbin/nologin",
+          "gecos": "lp"
+        },
+        "sync": {
+          "dir": "/sbin",
+          "gid": 0,
+          "uid": 5,
+          "shell": "/bin/sync",
+          "gecos": "sync"
+        },
+        "shutdown": {
+          "dir": "/sbin",
+          "gid": 0,
+          "uid": 6,
+          "shell": "/sbin/shutdown",
+          "gecos": "shutdown"
+        },
+        "halt": {
+          "dir": "/sbin",
+          "gid": 0,
+          "uid": 7,
+          "shell": "/sbin/halt",
+          "gecos": "halt"
+        },
+        "mail": {
+          "dir": "/var/spool/mail",
+          "gid": 12,
+          "uid": 8,
+          "shell": "/sbin/nologin",
+          "gecos": "mail"
+        },
+        "operator": {
+          "dir": "/root",
+          "gid": 0,
+          "uid": 11,
+          "shell": "/sbin/nologin",
+          "gecos": "operator"
+        },
+        "games": {
+          "dir": "/usr/games",
+          "gid": 100,
+          "uid": 12,
+          "shell": "/sbin/nologin",
+          "gecos": "games"
+        },
+        "ftp": {
+          "dir": "/var/ftp",
+          "gid": 50,
+          "uid": 14,
+          "shell": "/sbin/nologin",
+          "gecos": "FTP User"
+        },
+        "nobody": {
+          "dir": "/",
+          "gid": 99,
+          "uid": 99,
+          "shell": "/sbin/nologin",
+          "gecos": "Nobody"
+        },
+        "avahi-autoipd": {
+          "dir": "/var/lib/avahi-autoipd",
+          "gid": 170,
+          "uid": 170,
+          "shell": "/sbin/nologin",
+          "gecos": "Avahi IPv4LL Stack"
+        },
+        "systemd-bus-proxy": {
+          "dir": "/",
+          "gid": 997,
+          "uid": 999,
+          "shell": "/sbin/nologin",
+          "gecos": "systemd Bus Proxy"
+        },
+        "systemd-network": {
+          "dir": "/",
+          "gid": 996,
+          "uid": 998,
+          "shell": "/sbin/nologin",
+          "gecos": "systemd Network Management"
+        },
+        "dbus": {
+          "dir": "/",
+          "gid": 81,
+          "uid": 81,
+          "shell": "/sbin/nologin",
+          "gecos": "System message bus"
+        },
+        "polkitd": {
+          "dir": "/",
+          "gid": 995,
+          "uid": 997,
+          "shell": "/sbin/nologin",
+          "gecos": "User for polkitd"
+        },
+        "rpc": {
+          "dir": "/var/lib/rpcbind",
+          "gid": 32,
+          "uid": 32,
+          "shell": "/sbin/nologin",
+          "gecos": "Rpcbind Daemon"
+        },
+        "tss": {
+          "dir": "/dev/null",
+          "gid": 59,
+          "uid": 59,
+          "shell": "/sbin/nologin",
+          "gecos": "Account used by the trousers package to sandbox the tcsd daemon"
+        },
+        "rpcuser": {
+          "dir": "/var/lib/nfs",
+          "gid": 29,
+          "uid": 29,
+          "shell": "/sbin/nologin",
+          "gecos": "RPC Service User"
+        },
+        "nfsnobody": {
+          "dir": "/var/lib/nfs",
+          "gid": 65534,
+          "uid": 65534,
+          "shell": "/sbin/nologin",
+          "gecos": "Anonymous NFS User"
+        },
+        "postfix": {
+          "dir": "/var/spool/postfix",
+          "gid": 89,
+          "uid": 89,
+          "shell": "/sbin/nologin",
+          "gecos": ""
+        },
+        "sshd": {
+          "dir": "/var/empty/sshd",
+          "gid": 74,
+          "uid": 74,
+          "shell": "/sbin/nologin",
+          "gecos": "Privilege-separated SSH"
+        },
+        "vagrant": {
+          "dir": "/home/vagrant",
+          "gid": 1000,
+          "uid": 1000,
+          "shell": "/bin/bash",
+          "gecos": "vagrant"
+        },
+        "vboxadd": {
+          "dir": "/var/run/vboxadd",
+          "gid": 1,
+          "uid": 996,
+          "shell": "/bin/false",
+          "gecos": ""
+        },
+        "oracle": {
+          "dir": "/home/oracle",
+          "gid": 54321,
+          "uid": 1200,
+          "shell": "/bin/bash",
+          "gecos": ""
+        }
+      },
+      "group": {
+        "root": {
+          "gid": 0,
+          "members": [
+
+          ]
+        },
+        "bin": {
+          "gid": 1,
+          "members": [
+
+          ]
+        },
+        "daemon": {
+          "gid": 2,
+          "members": [
+
+          ]
+        },
+        "sys": {
+          "gid": 3,
+          "members": [
+
+          ]
+        },
+        "adm": {
+          "gid": 4,
+          "members": [
+
+          ]
+        },
+        "tty": {
+          "gid": 5,
+          "members": [
+
+          ]
+        },
+        "disk": {
+          "gid": 6,
+          "members": [
+
+          ]
+        },
+        "lp": {
+          "gid": 7,
+          "members": [
+
+          ]
+        },
+        "mem": {
+          "gid": 8,
+          "members": [
+
+          ]
+        },
+        "kmem": {
+          "gid": 9,
+          "members": [
+
+          ]
+        },
+        "wheel": {
+          "gid": 10,
+          "members": [
+
+          ]
+        },
+        "cdrom": {
+          "gid": 11,
+          "members": [
+
+          ]
+        },
+        "mail": {
+          "gid": 12,
+          "members": [
+            "postfix"
+          ]
+        },
+        "man": {
+          "gid": 15,
+          "members": [
+
+          ]
+        },
+        "dialout": {
+          "gid": 18,
+          "members": [
+
+          ]
+        },
+        "floppy": {
+          "gid": 19,
+          "members": [
+
+          ]
+        },
+        "games": {
+          "gid": 20,
+          "members": [
+
+          ]
+        },
+        "tape": {
+          "gid": 30,
+          "members": [
+
+          ]
+        },
+        "video": {
+          "gid": 39,
+          "members": [
+
+          ]
+        },
+        "ftp": {
+          "gid": 50,
+          "members": [
+
+          ]
+        },
+        "lock": {
+          "gid": 54,
+          "members": [
+
+          ]
+        },
+        "audio": {
+          "gid": 63,
+          "members": [
+
+          ]
+        },
+        "nobody": {
+          "gid": 99,
+          "members": [
+
+          ]
+        },
+        "users": {
+          "gid": 100,
+          "members": [
+
+          ]
+        },
+        "avahi-autoipd": {
+          "gid": 170,
+          "members": [
+
+          ]
+        },
+        "utmp": {
+          "gid": 22,
+          "members": [
+
+          ]
+        },
+        "utempter": {
+          "gid": 35,
+          "members": [
+
+          ]
+        },
+        "ssh_keys": {
+          "gid": 999,
+          "members": [
+
+          ]
+        },
+        "input": {
+          "gid": 998,
+          "members": [
+
+          ]
+        },
+        "systemd-journal": {
+          "gid": 190,
+          "members": [
+
+          ]
+        },
+        "systemd-bus-proxy": {
+          "gid": 997,
+          "members": [
+
+          ]
+        },
+        "systemd-network": {
+          "gid": 996,
+          "members": [
+
+          ]
+        },
+        "dbus": {
+          "gid": 81,
+          "members": [
+
+          ]
+        },
+        "polkitd": {
+          "gid": 995,
+          "members": [
+
+          ]
+        },
+        "rpc": {
+          "gid": 32,
+          "members": [
+
+          ]
+        },
+        "tss": {
+          "gid": 59,
+          "members": [
+
+          ]
+        },
+        "dip": {
+          "gid": 40,
+          "members": [
+
+          ]
+        },
+        "rpcuser": {
+          "gid": 29,
+          "members": [
+
+          ]
+        },
+        "nfsnobody": {
+          "gid": 65534,
+          "members": [
+
+          ]
+        },
+        "postdrop": {
+          "gid": 90,
+          "members": [
+
+          ]
+        },
+        "postfix": {
+          "gid": 89,
+          "members": [
+
+          ]
+        },
+        "sshd": {
+          "gid": 74,
+          "members": [
+
+          ]
+        },
+        "vagrant": {
+          "gid": 1000,
+          "members": [
+            "vagrant"
+          ]
+        },
+        "vboxsf": {
+          "gid": 994,
+          "members": [
+
+          ]
+        },
+        "oinstall": {
+          "gid": 54321,
+          "members": [
+            "oracle"
+          ]
+        },
+        "dba": {
+          "gid": 54322,
+          "members": [
+            "oracle"
+          ]
+        },
+        "backupdba": {
+          "gid": 54323,
+          "members": [
+            "oracle"
+          ]
+        },
+        "oper": {
+          "gid": 54324,
+          "members": [
+            "oracle"
+          ]
+        },
+        "dgdba": {
+          "gid": 54325,
+          "members": [
+            "oracle"
+          ]
+        },
+        "kmdba": {
+          "gid": 54326,
+          "members": [
+            "oracle"
+          ]
+        }
+      }
+    },
+    "current_user": "root",
+    "cloud_v2": null,
+    "command": {
+      "ps": "ps -ef"
+    },
+    "filesystem2": {
+      "by_device": {
+        "/dev/mapper/ol-root": {
+          "kb_size": "43977748",
+          "kb_used": "5153084",
+          "kb_available": "38824664",
+          "percent_used": "12%",
+          "total_inodes": "43999232",
+          "inodes_used": "129757",
+          "inodes_available": "43869475",
+          "inodes_percent_used": "1%",
+          "fs_type": "xfs",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "seclabel",
+            "attr2",
+            "inode64",
+            "noquota"
+          ],
+          "uuid": "365ae7f5-5eea-4193-ad0a-a6154dd56ade",
+          "mounts": [
+            "/"
+          ]
+        },
+        "devtmpfs": {
+          "kb_size": "498428",
+          "kb_used": "0",
+          "kb_available": "498428",
+          "percent_used": "0%",
+          "total_inodes": "124607",
+          "inodes_used": "329",
+          "inodes_available": "124278",
+          "inodes_percent_used": "1%",
+          "fs_type": "devtmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "seclabel",
+            "size=498428k",
+            "nr_inodes=124607",
+            "mode=755"
+          ],
+          "mounts": [
+            "/dev"
+          ]
+        },
+        "tmpfs": {
+          "kb_size": "101688",
+          "kb_used": "0",
+          "kb_available": "101688",
+          "percent_used": "0%",
+          "total_inodes": "127107",
+          "inodes_used": "1",
+          "inodes_available": "127106",
+          "inodes_percent_used": "1%",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "relatime",
+            "seclabel",
+            "size=101688k",
+            "mode=700",
+            "uid=1000",
+            "gid=1000"
+          ],
+          "mounts": [
+            "/dev/shm",
+            "/run",
+            "/sys/fs/cgroup",
+            "/run/user/1000"
+          ]
+        },
+        "/dev/mapper/ol-home": {
+          "kb_size": "21468936",
+          "kb_used": "32976",
+          "kb_available": "21435960",
+          "percent_used": "1%",
+          "total_inodes": "21479424",
+          "inodes_used": "18",
+          "inodes_available": "21479406",
+          "inodes_percent_used": "1%",
+          "fs_type": "xfs",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "seclabel",
+            "attr2",
+            "inode64",
+            "noquota"
+          ],
+          "uuid": "a435e965-b2b0-4722-876e-6813d3556cf9",
+          "mounts": [
+            "/home"
+          ]
+        },
+        "/dev/sda1": {
+          "kb_size": "508588",
+          "kb_used": "236432",
+          "kb_available": "272156",
+          "percent_used": "47%",
+          "total_inodes": "512000",
+          "inodes_used": "349",
+          "inodes_available": "511651",
+          "inodes_percent_used": "1%",
+          "fs_type": "xfs",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "seclabel",
+            "attr2",
+            "inode64",
+            "noquota"
+          ],
+          "uuid": "c710c23c-1bd4-4188-abb4-8de21a5052eb",
+          "mounts": [
+            "/boot"
+          ]
+        },
+        "vagrant": {
+          "kb_size": "341867516",
+          "kb_used": "128961088",
+          "kb_available": "212906428",
+          "percent_used": "38%",
+          "total_inodes": "1000",
+          "inodes_used": "0",
+          "inodes_available": "1000",
+          "inodes_percent_used": "0%",
+          "mounts": [
+            "/vagrant"
+          ]
+        },
+        "vagrant_data": {
+          "kb_size": "341867516",
+          "kb_used": "128961088",
+          "kb_available": "212906428",
+          "percent_used": "38%",
+          "total_inodes": "1000",
+          "inodes_used": "0",
+          "inodes_available": "1000",
+          "inodes_percent_used": "0%",
+          "mounts": [
+            "/vagrant_data"
+          ]
+        },
+        "sysfs": {
+          "fs_type": "sysfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "seclabel"
+          ],
+          "mounts": [
+            "/sys"
+          ]
+        },
+        "proc": {
+          "fs_type": "proc",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ],
+          "mounts": [
+            "/proc"
+          ]
+        },
+        "securityfs": {
+          "fs_type": "securityfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ],
+          "mounts": [
+            "/sys/kernel/security"
+          ]
+        },
+        "devpts": {
+          "fs_type": "devpts",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "noexec",
+            "relatime",
+            "seclabel",
+            "gid=5",
+            "mode=620",
+            "ptmxmode=000"
+          ],
+          "mounts": [
+            "/dev/pts"
+          ]
+        },
+        "cgroup": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "cpuset"
+          ],
+          "mounts": [
+            "/sys/fs/cgroup/systemd",
+            "/sys/fs/cgroup/perf_event",
+            "/sys/fs/cgroup/freezer",
+            "/sys/fs/cgroup/cpu,cpuacct",
+            "/sys/fs/cgroup/memory",
+            "/sys/fs/cgroup/devices",
+            "/sys/fs/cgroup/net_cls",
+            "/sys/fs/cgroup/hugetlb",
+            "/sys/fs/cgroup/blkio",
+            "/sys/fs/cgroup/cpuset"
+          ]
+        },
+        "pstore": {
+          "fs_type": "pstore",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ],
+          "mounts": [
+            "/sys/fs/pstore"
+          ]
+        },
+        "configfs": {
+          "fs_type": "configfs",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ],
+          "mounts": [
+            "/sys/kernel/config"
+          ]
+        },
+        "selinuxfs": {
+          "fs_type": "selinuxfs",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ],
+          "mounts": [
+            "/sys/fs/selinux"
+          ]
+        },
+        "systemd-1": {
+          "fs_type": "autofs",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "fd=28",
+            "pgrp=1",
+            "timeout=300",
+            "minproto=5",
+            "maxproto=5",
+            "direct"
+          ],
+          "mounts": [
+            "/proc/sys/fs/binfmt_misc"
+          ]
+        },
+        "debugfs": {
+          "fs_type": "debugfs",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ],
+          "mounts": [
+            "/sys/kernel/debug"
+          ]
+        },
+        "mqueue": {
+          "fs_type": "mqueue",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "seclabel"
+          ],
+          "mounts": [
+            "/dev/mqueue"
+          ]
+        },
+        "hugetlbfs": {
+          "fs_type": "hugetlbfs",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "seclabel"
+          ],
+          "mounts": [
+            "/dev/hugepages"
+          ]
+        },
+        "binfmt_misc": {
+          "fs_type": "binfmt_misc",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ],
+          "mounts": [
+            "/proc/sys/fs/binfmt_misc"
+          ]
+        },
+        "sunrpc": {
+          "fs_type": "rpc_pipefs",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ],
+          "mounts": [
+            "/var/lib/nfs/rpc_pipefs"
+          ]
+        },
+        "nfsd": {
+          "fs_type": "nfsd",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ],
+          "mounts": [
+            "/proc/fs/nfsd"
+          ]
+        },
+        "/vagrant": {
+          "fs_type": "vboxsf",
+          "mount_options": [
+            "rw",
+            "nodev",
+            "relatime"
+          ],
+          "mounts": [
+            "/vagrant"
+          ]
+        },
+        "/vagrant_data": {
+          "fs_type": "vboxsf",
+          "mount_options": [
+            "rw",
+            "nodev",
+            "relatime"
+          ],
+          "mounts": [
+            "/vagrant_data"
+          ]
+        },
+        "/dev/sda": {
+          "mounts": [
+
+          ]
+        },
+        "/dev/sda2": {
+          "fs_type": "LVM2_member",
+          "uuid": "0ySAON-dUwd-zw8k-l0mr-BIkR-j3C3-ao94Rg",
+          "mounts": [
+
+          ]
+        },
+        "/dev/mapper/ol-swap": {
+          "fs_type": "swap",
+          "uuid": "d21ae819-5b33-4c9d-99f4-18c50c30038d",
+          "mounts": [
+
+          ]
+        },
+        "rootfs": {
+          "fs_type": "rootfs",
+          "mount_options": [
+            "rw"
+          ],
+          "mounts": [
+            "/"
+          ]
+        }
+      },
+      "by_mountpoint": {
+        "/": {
+          "kb_size": "43977748",
+          "kb_used": "5153084",
+          "kb_available": "38824664",
+          "percent_used": "12%",
+          "total_inodes": "43999232",
+          "inodes_used": "129757",
+          "inodes_available": "43869475",
+          "inodes_percent_used": "1%",
+          "fs_type": "rootfs",
+          "mount_options": [
+            "rw"
+          ],
+          "uuid": "365ae7f5-5eea-4193-ad0a-a6154dd56ade",
+          "devices": [
+            "/dev/mapper/ol-root",
+            "rootfs"
+          ]
+        },
+        "/dev": {
+          "kb_size": "498428",
+          "kb_used": "0",
+          "kb_available": "498428",
+          "percent_used": "0%",
+          "total_inodes": "124607",
+          "inodes_used": "329",
+          "inodes_available": "124278",
+          "inodes_percent_used": "1%",
+          "fs_type": "devtmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "seclabel",
+            "size=498428k",
+            "nr_inodes=124607",
+            "mode=755"
+          ],
+          "devices": [
+            "devtmpfs"
+          ]
+        },
+        "/dev/shm": {
+          "kb_size": "508428",
+          "kb_used": "0",
+          "kb_available": "508428",
+          "percent_used": "0%",
+          "total_inodes": "127107",
+          "inodes_used": "1",
+          "inodes_available": "127106",
+          "inodes_percent_used": "1%",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "seclabel"
+          ],
+          "devices": [
+            "tmpfs"
+          ]
+        },
+        "/run": {
+          "kb_size": "508428",
+          "kb_used": "6652",
+          "kb_available": "501776",
+          "percent_used": "2%",
+          "total_inodes": "127107",
+          "inodes_used": "389",
+          "inodes_available": "126718",
+          "inodes_percent_used": "1%",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "seclabel",
+            "mode=755"
+          ],
+          "devices": [
+            "tmpfs"
+          ]
+        },
+        "/sys/fs/cgroup": {
+          "kb_size": "508428",
+          "kb_used": "0",
+          "kb_available": "508428",
+          "percent_used": "0%",
+          "total_inodes": "127107",
+          "inodes_used": "13",
+          "inodes_available": "127094",
+          "inodes_percent_used": "1%",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "ro",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "seclabel",
+            "mode=755"
+          ],
+          "devices": [
+            "tmpfs"
+          ]
+        },
+        "/home": {
+          "kb_size": "21468936",
+          "kb_used": "32976",
+          "kb_available": "21435960",
+          "percent_used": "1%",
+          "total_inodes": "21479424",
+          "inodes_used": "18",
+          "inodes_available": "21479406",
+          "inodes_percent_used": "1%",
+          "fs_type": "xfs",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "seclabel",
+            "attr2",
+            "inode64",
+            "noquota"
+          ],
+          "uuid": "a435e965-b2b0-4722-876e-6813d3556cf9",
+          "devices": [
+            "/dev/mapper/ol-home"
+          ]
+        },
+        "/boot": {
+          "kb_size": "508588",
+          "kb_used": "236432",
+          "kb_available": "272156",
+          "percent_used": "47%",
+          "total_inodes": "512000",
+          "inodes_used": "349",
+          "inodes_available": "511651",
+          "inodes_percent_used": "1%",
+          "fs_type": "xfs",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "seclabel",
+            "attr2",
+            "inode64",
+            "noquota"
+          ],
+          "uuid": "c710c23c-1bd4-4188-abb4-8de21a5052eb",
+          "devices": [
+            "/dev/sda1"
+          ]
+        },
+        "/vagrant": {
+          "kb_size": "341867516",
+          "kb_used": "128961088",
+          "kb_available": "212906428",
+          "percent_used": "38%",
+          "total_inodes": "1000",
+          "inodes_used": "0",
+          "inodes_available": "1000",
+          "inodes_percent_used": "0%",
+          "devices": [
+            "vagrant",
+            "/vagrant"
+          ],
+          "fs_type": "vboxsf",
+          "mount_options": [
+            "rw",
+            "nodev",
+            "relatime"
+          ]
+        },
+        "/vagrant_data": {
+          "kb_size": "341867516",
+          "kb_used": "128961088",
+          "kb_available": "212906428",
+          "percent_used": "38%",
+          "total_inodes": "1000",
+          "inodes_used": "0",
+          "inodes_available": "1000",
+          "inodes_percent_used": "0%",
+          "devices": [
+            "vagrant_data",
+            "/vagrant_data"
+          ],
+          "fs_type": "vboxsf",
+          "mount_options": [
+            "rw",
+            "nodev",
+            "relatime"
+          ]
+        },
+        "/run/user/1000": {
+          "kb_size": "101688",
+          "kb_used": "0",
+          "kb_available": "101688",
+          "percent_used": "0%",
+          "total_inodes": "127107",
+          "inodes_used": "1",
+          "inodes_available": "127106",
+          "inodes_percent_used": "1%",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "relatime",
+            "seclabel",
+            "size=101688k",
+            "mode=700",
+            "uid=1000",
+            "gid=1000"
+          ],
+          "devices": [
+            "tmpfs"
+          ]
+        },
+        "/sys": {
+          "fs_type": "sysfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "seclabel"
+          ],
+          "devices": [
+            "sysfs"
+          ]
+        },
+        "/proc": {
+          "fs_type": "proc",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ],
+          "devices": [
+            "proc"
+          ]
+        },
+        "/sys/kernel/security": {
+          "fs_type": "securityfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ],
+          "devices": [
+            "securityfs"
+          ]
+        },
+        "/dev/pts": {
+          "fs_type": "devpts",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "noexec",
+            "relatime",
+            "seclabel",
+            "gid=5",
+            "mode=620",
+            "ptmxmode=000"
+          ],
+          "devices": [
+            "devpts"
+          ]
+        },
+        "/sys/fs/cgroup/systemd": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "xattr",
+            "release_agent=/usr/lib/systemd/systemd-cgroups-agent",
+            "name=systemd"
+          ],
+          "devices": [
+            "cgroup"
+          ]
+        },
+        "/sys/fs/pstore": {
+          "fs_type": "pstore",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ],
+          "devices": [
+            "pstore"
+          ]
+        },
+        "/sys/fs/cgroup/perf_event": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "perf_event"
+          ],
+          "devices": [
+            "cgroup"
+          ]
+        },
+        "/sys/fs/cgroup/freezer": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "freezer"
+          ],
+          "devices": [
+            "cgroup"
+          ]
+        },
+        "/sys/fs/cgroup/cpu,cpuacct": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "cpuacct",
+            "cpu"
+          ],
+          "devices": [
+            "cgroup"
+          ]
+        },
+        "/sys/fs/cgroup/memory": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "memory"
+          ],
+          "devices": [
+            "cgroup"
+          ]
+        },
+        "/sys/fs/cgroup/devices": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "devices"
+          ],
+          "devices": [
+            "cgroup"
+          ]
+        },
+        "/sys/fs/cgroup/net_cls": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "net_cls"
+          ],
+          "devices": [
+            "cgroup"
+          ]
+        },
+        "/sys/fs/cgroup/hugetlb": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "hugetlb"
+          ],
+          "devices": [
+            "cgroup"
+          ]
+        },
+        "/sys/fs/cgroup/blkio": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "blkio"
+          ],
+          "devices": [
+            "cgroup"
+          ]
+        },
+        "/sys/fs/cgroup/cpuset": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "cpuset"
+          ],
+          "devices": [
+            "cgroup"
+          ]
+        },
+        "/sys/kernel/config": {
+          "fs_type": "configfs",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ],
+          "devices": [
+            "configfs"
+          ]
+        },
+        "/sys/fs/selinux": {
+          "fs_type": "selinuxfs",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ],
+          "devices": [
+            "selinuxfs"
+          ]
+        },
+        "/proc/sys/fs/binfmt_misc": {
+          "fs_type": "binfmt_misc",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ],
+          "devices": [
+            "systemd-1",
+            "binfmt_misc"
+          ]
+        },
+        "/sys/kernel/debug": {
+          "fs_type": "debugfs",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ],
+          "devices": [
+            "debugfs"
+          ]
+        },
+        "/dev/mqueue": {
+          "fs_type": "mqueue",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "seclabel"
+          ],
+          "devices": [
+            "mqueue"
+          ]
+        },
+        "/dev/hugepages": {
+          "fs_type": "hugetlbfs",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "seclabel"
+          ],
+          "devices": [
+            "hugetlbfs"
+          ]
+        },
+        "/var/lib/nfs/rpc_pipefs": {
+          "fs_type": "rpc_pipefs",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ],
+          "devices": [
+            "sunrpc"
+          ]
+        },
+        "/proc/fs/nfsd": {
+          "fs_type": "nfsd",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ],
+          "devices": [
+            "nfsd"
+          ]
+        }
+      },
+      "by_pair": {
+        "/dev/mapper/ol-root,/": {
+          "device": "/dev/mapper/ol-root",
+          "kb_size": "43977748",
+          "kb_used": "5153084",
+          "kb_available": "38824664",
+          "percent_used": "12%",
+          "mount": "/",
+          "total_inodes": "43999232",
+          "inodes_used": "129757",
+          "inodes_available": "43869475",
+          "inodes_percent_used": "1%",
+          "fs_type": "xfs",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "seclabel",
+            "attr2",
+            "inode64",
+            "noquota"
+          ],
+          "uuid": "365ae7f5-5eea-4193-ad0a-a6154dd56ade"
+        },
+        "devtmpfs,/dev": {
+          "device": "devtmpfs",
+          "kb_size": "498428",
+          "kb_used": "0",
+          "kb_available": "498428",
+          "percent_used": "0%",
+          "mount": "/dev",
+          "total_inodes": "124607",
+          "inodes_used": "329",
+          "inodes_available": "124278",
+          "inodes_percent_used": "1%",
+          "fs_type": "devtmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "seclabel",
+            "size=498428k",
+            "nr_inodes=124607",
+            "mode=755"
+          ]
+        },
+        "tmpfs,/dev/shm": {
+          "device": "tmpfs",
+          "kb_size": "508428",
+          "kb_used": "0",
+          "kb_available": "508428",
+          "percent_used": "0%",
+          "mount": "/dev/shm",
+          "total_inodes": "127107",
+          "inodes_used": "1",
+          "inodes_available": "127106",
+          "inodes_percent_used": "1%",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "seclabel"
+          ]
+        },
+        "tmpfs,/run": {
+          "device": "tmpfs",
+          "kb_size": "508428",
+          "kb_used": "6652",
+          "kb_available": "501776",
+          "percent_used": "2%",
+          "mount": "/run",
+          "total_inodes": "127107",
+          "inodes_used": "389",
+          "inodes_available": "126718",
+          "inodes_percent_used": "1%",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "seclabel",
+            "mode=755"
+          ]
+        },
+        "tmpfs,/sys/fs/cgroup": {
+          "device": "tmpfs",
+          "kb_size": "508428",
+          "kb_used": "0",
+          "kb_available": "508428",
+          "percent_used": "0%",
+          "mount": "/sys/fs/cgroup",
+          "total_inodes": "127107",
+          "inodes_used": "13",
+          "inodes_available": "127094",
+          "inodes_percent_used": "1%",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "ro",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "seclabel",
+            "mode=755"
+          ]
+        },
+        "/dev/mapper/ol-home,/home": {
+          "device": "/dev/mapper/ol-home",
+          "kb_size": "21468936",
+          "kb_used": "32976",
+          "kb_available": "21435960",
+          "percent_used": "1%",
+          "mount": "/home",
+          "total_inodes": "21479424",
+          "inodes_used": "18",
+          "inodes_available": "21479406",
+          "inodes_percent_used": "1%",
+          "fs_type": "xfs",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "seclabel",
+            "attr2",
+            "inode64",
+            "noquota"
+          ],
+          "uuid": "a435e965-b2b0-4722-876e-6813d3556cf9"
+        },
+        "/dev/sda1,/boot": {
+          "device": "/dev/sda1",
+          "kb_size": "508588",
+          "kb_used": "236432",
+          "kb_available": "272156",
+          "percent_used": "47%",
+          "mount": "/boot",
+          "total_inodes": "512000",
+          "inodes_used": "349",
+          "inodes_available": "511651",
+          "inodes_percent_used": "1%",
+          "fs_type": "xfs",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "seclabel",
+            "attr2",
+            "inode64",
+            "noquota"
+          ],
+          "uuid": "c710c23c-1bd4-4188-abb4-8de21a5052eb"
+        },
+        "vagrant,/vagrant": {
+          "device": "vagrant",
+          "kb_size": "341867516",
+          "kb_used": "128961088",
+          "kb_available": "212906428",
+          "percent_used": "38%",
+          "mount": "/vagrant",
+          "total_inodes": "1000",
+          "inodes_used": "0",
+          "inodes_available": "1000",
+          "inodes_percent_used": "0%"
+        },
+        "vagrant_data,/vagrant_data": {
+          "device": "vagrant_data",
+          "kb_size": "341867516",
+          "kb_used": "128961088",
+          "kb_available": "212906428",
+          "percent_used": "38%",
+          "mount": "/vagrant_data",
+          "total_inodes": "1000",
+          "inodes_used": "0",
+          "inodes_available": "1000",
+          "inodes_percent_used": "0%"
+        },
+        "tmpfs,/run/user/1000": {
+          "device": "tmpfs",
+          "kb_size": "101688",
+          "kb_used": "0",
+          "kb_available": "101688",
+          "percent_used": "0%",
+          "mount": "/run/user/1000",
+          "total_inodes": "127107",
+          "inodes_used": "1",
+          "inodes_available": "127106",
+          "inodes_percent_used": "1%",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "relatime",
+            "seclabel",
+            "size=101688k",
+            "mode=700",
+            "uid=1000",
+            "gid=1000"
+          ]
+        },
+        "sysfs,/sys": {
+          "device": "sysfs",
+          "mount": "/sys",
+          "fs_type": "sysfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "seclabel"
+          ]
+        },
+        "proc,/proc": {
+          "device": "proc",
+          "mount": "/proc",
+          "fs_type": "proc",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ]
+        },
+        "securityfs,/sys/kernel/security": {
+          "device": "securityfs",
+          "mount": "/sys/kernel/security",
+          "fs_type": "securityfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ]
+        },
+        "devpts,/dev/pts": {
+          "device": "devpts",
+          "mount": "/dev/pts",
+          "fs_type": "devpts",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "noexec",
+            "relatime",
+            "seclabel",
+            "gid=5",
+            "mode=620",
+            "ptmxmode=000"
+          ]
+        },
+        "cgroup,/sys/fs/cgroup/systemd": {
+          "device": "cgroup",
+          "mount": "/sys/fs/cgroup/systemd",
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "xattr",
+            "release_agent=/usr/lib/systemd/systemd-cgroups-agent",
+            "name=systemd"
+          ]
+        },
+        "pstore,/sys/fs/pstore": {
+          "device": "pstore",
+          "mount": "/sys/fs/pstore",
+          "fs_type": "pstore",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ]
+        },
+        "cgroup,/sys/fs/cgroup/perf_event": {
+          "device": "cgroup",
+          "mount": "/sys/fs/cgroup/perf_event",
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "perf_event"
+          ]
+        },
+        "cgroup,/sys/fs/cgroup/freezer": {
+          "device": "cgroup",
+          "mount": "/sys/fs/cgroup/freezer",
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "freezer"
+          ]
+        },
+        "cgroup,/sys/fs/cgroup/cpu,cpuacct": {
+          "device": "cgroup",
+          "mount": "/sys/fs/cgroup/cpu,cpuacct",
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "cpuacct",
+            "cpu"
+          ]
+        },
+        "cgroup,/sys/fs/cgroup/memory": {
+          "device": "cgroup",
+          "mount": "/sys/fs/cgroup/memory",
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "memory"
+          ]
+        },
+        "cgroup,/sys/fs/cgroup/devices": {
+          "device": "cgroup",
+          "mount": "/sys/fs/cgroup/devices",
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "devices"
+          ]
+        },
+        "cgroup,/sys/fs/cgroup/net_cls": {
+          "device": "cgroup",
+          "mount": "/sys/fs/cgroup/net_cls",
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "net_cls"
+          ]
+        },
+        "cgroup,/sys/fs/cgroup/hugetlb": {
+          "device": "cgroup",
+          "mount": "/sys/fs/cgroup/hugetlb",
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "hugetlb"
+          ]
+        },
+        "cgroup,/sys/fs/cgroup/blkio": {
+          "device": "cgroup",
+          "mount": "/sys/fs/cgroup/blkio",
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "blkio"
+          ]
+        },
+        "cgroup,/sys/fs/cgroup/cpuset": {
+          "device": "cgroup",
+          "mount": "/sys/fs/cgroup/cpuset",
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "cpuset"
+          ]
+        },
+        "configfs,/sys/kernel/config": {
+          "device": "configfs",
+          "mount": "/sys/kernel/config",
+          "fs_type": "configfs",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ]
+        },
+        "selinuxfs,/sys/fs/selinux": {
+          "device": "selinuxfs",
+          "mount": "/sys/fs/selinux",
+          "fs_type": "selinuxfs",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ]
+        },
+        "systemd-1,/proc/sys/fs/binfmt_misc": {
+          "device": "systemd-1",
+          "mount": "/proc/sys/fs/binfmt_misc",
+          "fs_type": "autofs",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "fd=28",
+            "pgrp=1",
+            "timeout=300",
+            "minproto=5",
+            "maxproto=5",
+            "direct"
+          ]
+        },
+        "debugfs,/sys/kernel/debug": {
+          "device": "debugfs",
+          "mount": "/sys/kernel/debug",
+          "fs_type": "debugfs",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ]
+        },
+        "mqueue,/dev/mqueue": {
+          "device": "mqueue",
+          "mount": "/dev/mqueue",
+          "fs_type": "mqueue",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "seclabel"
+          ]
+        },
+        "hugetlbfs,/dev/hugepages": {
+          "device": "hugetlbfs",
+          "mount": "/dev/hugepages",
+          "fs_type": "hugetlbfs",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "seclabel"
+          ]
+        },
+        "binfmt_misc,/proc/sys/fs/binfmt_misc": {
+          "device": "binfmt_misc",
+          "mount": "/proc/sys/fs/binfmt_misc",
+          "fs_type": "binfmt_misc",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ]
+        },
+        "sunrpc,/var/lib/nfs/rpc_pipefs": {
+          "device": "sunrpc",
+          "mount": "/var/lib/nfs/rpc_pipefs",
+          "fs_type": "rpc_pipefs",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ]
+        },
+        "nfsd,/proc/fs/nfsd": {
+          "device": "nfsd",
+          "mount": "/proc/fs/nfsd",
+          "fs_type": "nfsd",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ]
+        },
+        "/vagrant,/vagrant": {
+          "device": "/vagrant",
+          "mount": "/vagrant",
+          "fs_type": "vboxsf",
+          "mount_options": [
+            "rw",
+            "nodev",
+            "relatime"
+          ]
+        },
+        "/vagrant_data,/vagrant_data": {
+          "device": "/vagrant_data",
+          "mount": "/vagrant_data",
+          "fs_type": "vboxsf",
+          "mount_options": [
+            "rw",
+            "nodev",
+            "relatime"
+          ]
+        },
+        "/dev/sda,": {
+          "device": "/dev/sda"
+        },
+        "/dev/sda2,": {
+          "device": "/dev/sda2",
+          "fs_type": "LVM2_member",
+          "uuid": "0ySAON-dUwd-zw8k-l0mr-BIkR-j3C3-ao94Rg"
+        },
+        "/dev/mapper/ol-swap,": {
+          "device": "/dev/mapper/ol-swap",
+          "fs_type": "swap",
+          "uuid": "d21ae819-5b33-4c9d-99f4-18c50c30038d"
+        },
+        "rootfs,/": {
+          "device": "rootfs",
+          "mount": "/",
+          "fs_type": "rootfs",
+          "mount_options": [
+            "rw"
+          ]
+        }
+      }
+    },
+    "hostname": "oel72",
+    "machinename": "oel72",
+    "fqdn": "oel72",
+    "domain": null,
+    "init_package": "systemd",
+    "keys": {
+      "ssh": {
+        "host_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQCsfvBfrnp7JP7xb8mVg4yMG3MwenXR7p/U6bgVi9Ud3+iitXXl02/O7nMuVWVp3BAXnH4IRskeCiP1PbeuDRKDXWvClOTfP512e9QsZC9WpfhM/CNzER9xjcd7OTced+vpO4BJEpaXqAMp1MVrqhfFCoEhPGQEYcmeRtU+kUkSppD4MeycQ/IgKvdV7+PORspVoGmJyJbmRMkLPHpmQwq3KvzEMz3Vz4v15YgFXTv8qBxiplBBRR4aKGiB5zGRXRnEEWmlAqnFIVcNXoTwVzER10YglXyNB+xM9823XgPUNuAAHtdTto0jLuOxtoQYdnnCMcgbhjFSorLqMdLRjRuj",
+        "host_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBAGB6bhves0N9kzKsNmljhy+OzRnOB07IOzSGaIiP5uikeCX980Ra5yNSElbgtawAOjpAeNQ2ShS8V9KNjr9CCw=",
+        "host_ecdsa_type": "ecdsa-sha2-nistp256",
+        "host_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAINhVyyf6Ze43Vx3XTPb+giYpgwY1MJ3e+jVv3GQLKrCl"
+      }
+    },
+    "block_device": {
+      "sda": {
+        "size": "134217728",
+        "removable": "0",
+        "model": "VBOX HARDDISK",
+        "rev": "1.0",
+        "state": "running",
+        "timeout": "30",
+        "vendor": "ATA",
+        "queue_depth": "31",
+        "rotational": "1"
+      },
+      "dm-0": {
+        "size": "87998464",
+        "removable": "0",
+        "rotational": "1"
+      },
+      "dm-1": {
+        "size": "2097152",
+        "removable": "0",
+        "rotational": "1"
+      },
+      "dm-2": {
+        "size": "42958848",
+        "removable": "0",
+        "rotational": "1"
+      }
+    },
+    "fips": {
+      "kernel": {
+        "enabled": false
+      }
+    },
+    "sessions": {
+      "by_session": {
+        "2": {
+          "session": "2",
+          "uid": "1000",
+          "user": "vagrant",
+          "seat": null
+        }
+      },
+      "by_user": {
+        "vagrant": [
+          {
+            "session": "2",
+            "uid": "1000",
+            "user": "vagrant",
+            "seat": null
+          }
+        ]
+      }
+    },
+    "ohai_time": 1465390795.8247435,
+    "packages": {
+      "lzo": {
+        "version": "2.06",
+        "release": "8.el7"
+      },
+      "filesystem": {
+        "version": "3.2",
+        "release": "20.el7"
+      },
+      "libgnome-keyring": {
+        "version": "3.8.0",
+        "release": "3.el7"
+      },
+      "libdb-utils": {
+        "version": "5.3.21",
+        "release": "19.el7"
+      },
+      "ncurses": {
+        "version": "5.9",
+        "release": "13.20130511.el7"
+      },
+      "gzip": {
+        "version": "1.5",
+        "release": "8.el7"
+      },
+      "bash": {
+        "version": "4.2.46",
+        "release": "19.el7"
+      },
+      "libpwquality": {
+        "version": "1.2.3",
+        "release": "4.el7"
+      },
+      "zlib": {
+        "version": "1.2.7",
+        "release": "15.el7"
+      },
+      "python-iniparse": {
+        "version": "0.4",
+        "release": "9.el7"
+      },
+      "sed": {
+        "version": "4.2.2",
+        "release": "5.el7"
+      },
+      "python-slip": {
+        "version": "0.4.0",
+        "release": "2.el7"
+      },
+      "python-dmidecode": {
+        "version": "3.10.13",
+        "release": "11.el7"
+      },
+      "libdb": {
+        "version": "5.3.21",
+        "release": "19.el7"
+      },
+      "readline": {
+        "version": "6.2",
+        "release": "9.el7"
+      },
+      "libcurl": {
+        "version": "7.29.0",
+        "release": "25.0.1.el7"
+      },
+      "pkgconfig": {
+        "version": "0.27.1",
+        "release": "4.el7"
+      },
+      "passwd": {
+        "version": "0.79",
+        "release": "4.el7"
+      },
+      "libacl": {
+        "version": "2.2.51",
+        "release": "12.el7"
+      },
+      "mysql-community-libs": {
+        "version": "5.6.27",
+        "release": "2.el7"
+      },
+      "ppp": {
+        "version": "2.4.5",
+        "release": "33.el7"
+      },
+      "rpm-python": {
+        "version": "4.11.3",
+        "release": "17.el7"
+      },
+      "alsa-tools-firmware": {
+        "version": "1.0.28",
+        "release": "2.el7"
+      },
+      "device-mapper-persistent-data": {
+        "version": "0.5.5",
+        "release": "1.el7"
+      },
+      "shadow-utils": {
+        "version": "4.1.5.1",
+        "release": "18.el7"
+      },
+      "libgomp": {
+        "version": "4.8.5",
+        "release": "4.el7"
+      },
+      "usermode": {
+        "version": "1.111",
+        "release": "5.el7"
+      },
+      "tzdata": {
+        "version": "2016d",
+        "release": "1.el7"
+      },
+      "audit": {
+        "version": "2.4.1",
+        "release": "5.el7"
+      },
+      "systemd-libs": {
+        "version": "219",
+        "release": "19.0.2.el7_2.9"
+      },
+      "libgudev1": {
+        "version": "219",
+        "release": "19.0.2.el7_2.9"
+      },
+      "e2fsprogs": {
+        "version": "1.42.9",
+        "release": "7.el7"
+      },
+      "libxml2": {
+        "version": "2.9.1",
+        "release": "6.0.1.el7_2.2"
+      },
+      "patch": {
+        "version": "2.7.1",
+        "release": "8.el7"
+      },
+      "coreutils": {
+        "version": "8.22",
+        "release": "15.0.1.el7_2.1"
+      },
+      "libcroco": {
+        "version": "0.6.8",
+        "release": "5.el7"
+      },
+      "systemd": {
+        "version": "219",
+        "release": "19.0.2.el7_2.9"
+      },
+      "slang": {
+        "version": "2.2.4",
+        "release": "11.el7"
+      },
+      "device-mapper-libs": {
+        "version": "1.02.107",
+        "release": "5.el7_2.2"
+      },
+      "libcollection": {
+        "version": "0.6.2",
+        "release": "25.el7"
+      },
+      "quota": {
+        "version": "4.01",
+        "release": "11.el7_2.1"
+      },
+      "keyutils": {
+        "version": "1.5.8",
+        "release": "3.el7"
+      },
+      "dracut": {
+        "version": "033",
+        "release": "360.0.1.el7_2"
+      },
+      "cronie": {
+        "version": "1.4.11",
+        "release": "14.el7_2.1"
+      },
+      "freetype": {
+        "version": "2.4.11",
+        "release": "11.el7"
+      },
+      "NetworkManager-libnm": {
+        "version": "1.0.6",
+        "release": "29.0.1.el7_2"
+      },
+      "avahi-libs": {
+        "version": "0.6.31",
+        "release": "15.el7_2.1"
+      },
+      "cracklib-dicts": {
+        "version": "2.9.0",
+        "release": "11.el7"
+      },
+      "openldap": {
+        "version": "2.4.40",
+        "release": "9.el7_2"
+      },
+      "pygobject3-base": {
+        "version": "3.14.0",
+        "release": "3.el7"
+      },
+      "NetworkManager": {
+        "version": "1.0.6",
+        "release": "29.0.1.el7_2"
+      },
+      "libselinux-python": {
+        "version": "2.2.2",
+        "release": "6.el7"
+      },
+      "bind-license": {
+        "version": "9.9.4",
+        "release": "29.el7_2.3"
+      },
+      "NetworkManager-tui": {
+        "version": "1.0.6",
+        "release": "29.0.1.el7_2"
+      },
+      "sudo": {
+        "version": "1.8.6p7",
+        "release": "17.el7_2"
+      },
+      "kexec-tools": {
+        "version": "2.0.7",
+        "release": "38.0.2.el7_2.1"
+      },
+      "dhcp-common": {
+        "version": "4.2.5",
+        "release": "42.0.1.el7"
+      },
+      "rdma": {
+        "version": "7.2_4.1_rc6",
+        "release": "2.el7"
+      },
+      "snappy": {
+        "version": "1.1.0",
+        "release": "3.el7"
+      },
+      "logrotate": {
+        "version": "3.8.6",
+        "release": "7.el7_2"
+      },
+      "rpm-build-libs": {
+        "version": "4.11.3",
+        "release": "17.el7"
+      },
+      "pcre": {
+        "version": "8.32",
+        "release": "15.el7_2.1"
+      },
+      "libaio": {
+        "version": "0.3.109",
+        "release": "13.el7"
+      },
+      "perl-HTTP-Tiny": {
+        "version": "0.033",
+        "release": "3.el7"
+      },
+      "libsemanage": {
+        "version": "2.1.10",
+        "release": "18.el7"
+      },
+      "perl-Text-ParseWords": {
+        "version": "3.29",
+        "release": "4.el7"
+      },
+      "perl-macros": {
+        "version": "5.16.3",
+        "release": "286.el7"
+      },
+      "setup": {
+        "version": "2.8.71",
+        "release": "6.el7"
+      },
+      "perl-Time-Local": {
+        "version": "1.2300",
+        "release": "2.el7"
+      },
+      "perl-PathTools": {
+        "version": "3.40",
+        "release": "5.el7"
+      },
+      "kernel-uek-firmware": {
+        "version": "3.8.13",
+        "release": "118.6.2.el7uek"
+      },
+      "perl-threads-shared": {
+        "version": "1.43",
+        "release": "6.el7"
+      },
+      "perl-Getopt-Long": {
+        "version": "2.40",
+        "release": "2.el7"
+      },
+      "ncurses-libs": {
+        "version": "5.9",
+        "release": "13.20130511.el7"
+      },
+      "perl-Git": {
+        "version": "1.8.3.1",
+        "release": "6.el7_2.1"
+      },
+      "libselinux": {
+        "version": "2.2.2",
+        "release": "6.el7"
+      },
+      "vim-filesystem": {
+        "version": "7.4.160",
+        "release": "1.el7"
+      },
+      "audit-libs": {
+        "version": "2.4.1",
+        "release": "5.el7"
+      },
+      "libmpc": {
+        "version": "1.0.1",
+        "release": "3.el7"
+      },
+      "glibc-devel": {
+        "version": "2.17",
+        "release": "106.0.1.el7_2.6"
+      },
+      "bzip2-libs": {
+        "version": "1.0.6",
+        "release": "13.el7"
+      },
+      "chefdk": {
+        "version": "0.14.25",
+        "release": "1.el7"
+      },
+      "gawk": {
+        "version": "4.0.2",
+        "release": "4.el7"
+      },
+      "libstdc++-devel": {
+        "version": "4.8.5",
+        "release": "4.el7"
+      },
+      "libffi": {
+        "version": "3.0.13",
+        "release": "16.el7"
+      },
+      "mailx": {
+        "version": "12.5",
+        "release": "12.el7_0"
+      },
+      "libattr": {
+        "version": "2.4.46",
+        "release": "12.el7"
+      },
+      "libaio-devel": {
+        "version": "0.3.109",
+        "release": "13.el7"
+      },
+      "expat": {
+        "version": "2.1.0",
+        "release": "8.el7"
+      },
+      "libX11-common": {
+        "version": "1.6.3",
+        "release": "2.el7"
+      },
+      "alsa-firmware": {
+        "version": "1.0.28",
+        "release": "2.el7"
+      },
+      "libXrender": {
+        "version": "0.9.8",
+        "release": "2.1.el7"
+      },
+      "jansson": {
+        "version": "2.4",
+        "release": "6.el7"
+      },
+      "libdmx": {
+        "version": "1.1.3",
+        "release": "3.el7"
+      },
+      "e2fsprogs-libs": {
+        "version": "1.42.9",
+        "release": "7.el7"
+      },
+      "libXxf86dga": {
+        "version": "1.1.4",
+        "release": "2.1.el7"
+      },
+      "xorg-x11-xauth": {
+        "version": "1.0.9",
+        "release": "1.el7"
+      },
+      "kernel": {
+        "version": "3.10.0",
+        "release": "327.18.2.el7"
+      },
+      "oracle-rdbms-server-12cR1-preinstall": {
+        "version": "1.0",
+        "release": "4.el7"
+      },
+      "tar": {
+        "version": "1.26",
+        "release": "29.el7"
+      },
+      "uname26": {
+        "version": "1.0",
+        "release": "1.el7"
+      },
+      "libunistring": {
+        "version": "0.9.3",
+        "release": "9.el7"
+      },
+      "sysvinit-tools": {
+        "version": "2.88",
+        "release": "14.dsf.el7"
+      },
+      "libmnl": {
+        "version": "1.0.3",
+        "release": "7.el7"
+      },
+      "ethtool": {
+        "version": "3.15",
+        "release": "2.el7"
+      },
+      "iptables": {
+        "version": "1.4.21",
+        "release": "16.el7"
+      },
+      "libdaemon": {
+        "version": "0.14",
+        "release": "7.el7"
+      },
+      "qrencode-libs": {
+        "version": "3.4.1",
+        "release": "3.el7"
+      },
+      "acl": {
+        "version": "2.2.51",
+        "release": "12.el7"
+      },
+      "cryptsetup-libs": {
+        "version": "1.6.7",
+        "release": "1.el7"
+      },
+      "nettle": {
+        "version": "2.7.1",
+        "release": "4.el7"
+      },
+      "kmod": {
+        "version": "20",
+        "release": "5.el7"
+      },
+      "pinentry": {
+        "version": "0.8.1",
+        "release": "14.el7"
+      },
+      "dbus": {
+        "version": "1.6.12",
+        "release": "13.0.1.el7"
+      },
+      "libselinux-utils": {
+        "version": "2.2.2",
+        "release": "6.el7"
+      },
+      "iputils": {
+        "version": "20121221",
+        "release": "7.el7"
+      },
+      "hwdata": {
+        "version": "0.252",
+        "release": "8.1.el7"
+      },
+      "python": {
+        "version": "2.7.5",
+        "release": "34.0.1.el7"
+      },
+      "dhclient": {
+        "version": "4.2.5",
+        "release": "42.0.1.el7"
+      },
+      "cracklib": {
+        "version": "2.9.0",
+        "release": "11.el7"
+      },
+      "polkit-pkla-compat": {
+        "version": "0.1",
+        "release": "4.el7"
+      },
+      "oracle-logos": {
+        "version": "70.0.3",
+        "release": "4.0.7.el7"
+      },
+      "os-prober": {
+        "version": "1.58",
+        "release": "5.0.1.el7"
+      },
+      "gettext": {
+        "version": "0.18.2.1",
+        "release": "4.el7"
+      },
+      "libtirpc": {
+        "version": "0.2.4",
+        "release": "0.6.el7"
+      },
+      "rhn-client-tools": {
+        "version": "2.0.2",
+        "release": "6.0.10.el7"
+      },
+      "rhnsd": {
+        "version": "5.0.13",
+        "release": "5.0.1.el7"
+      },
+      "pyxattr": {
+        "version": "0.5.1",
+        "release": "5.el7"
+      },
+      "yum-rhn-plugin": {
+        "version": "2.0.1",
+        "release": "5.0.3.el7"
+      },
+      "pyOpenSSL": {
+        "version": "0.13.1",
+        "release": "3.el7"
+      },
+      "libpciaccess": {
+        "version": "0.13.4",
+        "release": "2.el7"
+      },
+      "plymouth-scripts": {
+        "version": "0.8.9",
+        "release": "0.24.20140113.0.1.el7"
+      },
+      "fipscheck": {
+        "version": "1.4.1",
+        "release": "5.el7"
+      },
+      "wpa_supplicant": {
+        "version": "2.0",
+        "release": "17.el7_1"
+      },
+      "rpm-libs": {
+        "version": "4.11.3",
+        "release": "17.el7"
+      },
+      "trousers": {
+        "version": "0.3.13",
+        "release": "1.el7"
+      },
+      "dhcp-libs": {
+        "version": "4.2.5",
+        "release": "42.0.1.el7"
+      },
+      "glib-networking": {
+        "version": "2.42.0",
+        "release": "1.el7"
+      },
+      "python-pycurl": {
+        "version": "7.19.0",
+        "release": "17.el7"
+      },
+      "ebtables": {
+        "version": "2.0.10",
+        "release": "13.el7"
+      },
+      "libproxy": {
+        "version": "0.4.11",
+        "release": "8.el7"
+      },
+      "tcp_wrappers-libs": {
+        "version": "7.6",
+        "release": "77.el7"
+      },
+      "python-ethtool": {
+        "version": "0.8",
+        "release": "5.el7"
+      },
+      "libgcrypt": {
+        "version": "1.5.3",
+        "release": "12.el7_1.1"
+      },
+      "gnupg2": {
+        "version": "2.0.22",
+        "release": "3.el7"
+      },
+      "elfutils-libs": {
+        "version": "0.163",
+        "release": "3.el7"
+      },
+      "pygpgme": {
+        "version": "0.3",
+        "release": "9.el7"
+      },
+      "libnl3": {
+        "version": "3.2.21",
+        "release": "10.0.1.el7"
+      },
+      "p11-kit": {
+        "version": "0.20.7",
+        "release": "3.el7"
+      },
+      "json-c": {
+        "version": "0.11",
+        "release": "4.el7_0"
+      },
+      "libidn": {
+        "version": "1.28",
+        "release": "4.el7"
+      },
+      "ustr": {
+        "version": "1.0.4",
+        "release": "16.el7"
+      },
+      "groff-base": {
+        "version": "1.22.2",
+        "release": "8.el7"
+      },
+      "libutempter": {
+        "version": "1.1.6",
+        "release": "4.el7"
+      },
+      "kbd": {
+        "version": "1.15.5",
+        "release": "11.el7"
+      },
+      "rsyslog": {
+        "version": "7.4.7",
+        "release": "12.0.1.el7"
+      },
+      "gpg-pubkey": {
+        "version": "ec551f03",
+        "release": "53619141"
+      },
+      "kernel-uek": {
+        "version": "3.8.13",
+        "release": "118.6.2.el7uek"
+      },
+      "nss-softokn-freebl": {
+        "version": "3.16.2.3",
+        "release": "14.2.el7_2"
+      },
+      "glibc-common": {
+        "version": "2.17",
+        "release": "106.0.1.el7_2.6"
+      },
+      "nspr": {
+        "version": "4.11.0",
+        "release": "1.el7_2"
+      },
+      "libuuid": {
+        "version": "2.23.2",
+        "release": "26.el7_2.2"
+      },
+      "iprutils": {
+        "version": "2.4.8",
+        "release": "1.el7"
+      },
+      "chkconfig": {
+        "version": "1.3.61",
+        "release": "5.el7_2.1"
+      },
+      "btrfs-progs": {
+        "version": "3.19.1",
+        "release": "1.0.1.el7"
+      },
+      "procps-ng": {
+        "version": "3.3.10",
+        "release": "5.el7_2"
+      },
+      "file": {
+        "version": "5.11",
+        "release": "31.el7"
+      },
+      "gmp": {
+        "version": "6.0.0",
+        "release": "12.el7_1"
+      },
+      "libsysfs": {
+        "version": "2.1.0",
+        "release": "16.el7"
+      },
+      "openssl-libs": {
+        "version": "1.0.1e",
+        "release": "51.el7_2.5"
+      },
+      "rootfiles": {
+        "version": "8.1",
+        "release": "11.el7"
+      },
+      "ca-certificates": {
+        "version": "2015.2.6",
+        "release": "70.1.el7_2"
+      },
+      "which": {
+        "version": "2.20",
+        "release": "7.el7"
+      },
+      "libmount": {
+        "version": "2.23.2",
+        "release": "26.el7_2.2"
+      },
+      "libtasn1": {
+        "version": "3.8",
+        "release": "2.el7"
+      },
+      "util-linux": {
+        "version": "2.23.2",
+        "release": "26.el7_2.2"
+      },
+      "device-mapper": {
+        "version": "1.02.107",
+        "release": "5.el7_2.2"
+      },
+      "libbasicobjects": {
+        "version": "0.1.1",
+        "release": "25.el7"
+      },
+      "device-mapper-event-libs": {
+        "version": "1.02.107",
+        "release": "5.el7_2.2"
+      },
+      "hostname": {
+        "version": "3.13",
+        "release": "3.el7"
+      },
+      "rpcbind": {
+        "version": "0.2.0",
+        "release": "33.el7_2"
+      },
+      "gettext-libs": {
+        "version": "0.18.2.1",
+        "release": "4.el7"
+      },
+      "device-mapper-event": {
+        "version": "1.02.107",
+        "release": "5.el7_2.2"
+      },
+      "tcp_wrappers": {
+        "version": "7.6",
+        "release": "77.el7"
+      },
+      "kpartx": {
+        "version": "0.4.9",
+        "release": "85.el7_2.4"
+      },
+      "gsettings-desktop-schemas": {
+        "version": "3.14.2",
+        "release": "1.el7"
+      },
+      "dracut-network": {
+        "version": "033",
+        "release": "360.0.1.el7_2"
+      },
+      "mozjs17": {
+        "version": "17.0.0",
+        "release": "12.el7"
+      },
+      "cronie-anacron": {
+        "version": "1.4.11",
+        "release": "14.el7_2.1"
+      },
+      "kmod-libs": {
+        "version": "20",
+        "release": "5.el7"
+      },
+      "polkit": {
+        "version": "0.112",
+        "release": "6.el7_2"
+      },
+      "nss": {
+        "version": "3.21.0",
+        "release": "9.0.1.el7_2"
+      },
+      "python-libs": {
+        "version": "2.7.5",
+        "release": "34.0.1.el7"
+      },
+      "nss-tools": {
+        "version": "3.21.0",
+        "release": "9.0.1.el7_2"
+      },
+      "dbus-python": {
+        "version": "1.1.1",
+        "release": "9.el7"
+      },
+      "python-pyudev": {
+        "version": "0.15",
+        "release": "7.el7_2.1"
+      },
+      "newt-python": {
+        "version": "0.52.15",
+        "release": "4.el7"
+      },
+      "avahi-autoipd": {
+        "version": "0.6.31",
+        "release": "15.el7_2.1"
+      },
+      "pam": {
+        "version": "1.1.8",
+        "release": "12.el7_1.1"
+      },
+      "cyrus-sasl-lib": {
+        "version": "2.1.26",
+        "release": "20.el7_2"
+      },
+      "grubby": {
+        "version": "8.28",
+        "release": "17.0.1.el7"
+      },
+      "openssh": {
+        "version": "6.6.1p1",
+        "release": "25.el7_2"
+      },
+      "binutils": {
+        "version": "2.23.52.0.1",
+        "release": "55.el7"
+      },
+      "libndp": {
+        "version": "1.2",
+        "release": "6.el7_2"
+      },
+      "python-gudev": {
+        "version": "147.2",
+        "release": "7.el7"
+      },
+      "libteam": {
+        "version": "1.17",
+        "release": "6.el7_2"
+      },
+      "python-slip-dbus": {
+        "version": "0.4.0",
+        "release": "2.el7"
+      },
+      "libtalloc": {
+        "version": "2.1.5",
+        "release": "1.el7_2"
+      },
+      "pyliblzma": {
+        "version": "0.5.3",
+        "release": "11.el7"
+      },
+      "bind-libs-lite": {
+        "version": "9.9.4",
+        "release": "29.el7_2.3"
+      },
+      "m2crypto": {
+        "version": "0.21.1",
+        "release": "17.el7"
+      },
+      "alsa-lib": {
+        "version": "1.0.28",
+        "release": "2.el7"
+      },
+      "fipscheck-lib": {
+        "version": "1.4.1",
+        "release": "5.el7"
+      },
+      "curl": {
+        "version": "7.29.0",
+        "release": "25.0.1.el7"
+      },
+      "libuser": {
+        "version": "0.60",
+        "release": "7.el7_1"
+      },
+      "libnfsidmap": {
+        "version": "0.25",
+        "release": "12.el7"
+      },
+      "libmodman": {
+        "version": "2.0.1",
+        "release": "8.el7"
+      },
+      "libnl": {
+        "version": "1.1.4",
+        "release": "3.el7"
+      },
+      "pth": {
+        "version": "2.0.7",
+        "release": "23.el7"
+      },
+      "gpgme": {
+        "version": "1.3.2",
+        "release": "5.el7"
+      },
+      "libini_config": {
+        "version": "1.2.0",
+        "release": "25.el7"
+      },
+      "libpipeline": {
+        "version": "1.2.3",
+        "release": "3.el7"
+      },
+      "perl-parent": {
+        "version": "0.225",
+        "release": "244.el7"
+      },
+      "perl-podlators": {
+        "version": "2.5.1",
+        "release": "3.el7"
+      },
+      "perl-Pod-Escapes": {
+        "version": "1.04",
+        "release": "286.el7"
+      },
+      "perl-Encode": {
+        "version": "2.51",
+        "release": "7.el7"
+      },
+      "virt-what": {
+        "version": "1.13",
+        "release": "6.el7"
+      },
+      "perl-libs": {
+        "version": "5.16.3",
+        "release": "286.el7"
+      },
+      "libnetfilter_conntrack": {
+        "version": "1.0.4",
+        "release": "2.el7"
+      },
+      "perl-Storable": {
+        "version": "2.45",
+        "release": "3.el7"
+      },
+      "iproute": {
+        "version": "3.10.0",
+        "release": "54.el7"
+      },
+      "perl-constant": {
+        "version": "1.27",
+        "release": "2.el7"
+      },
+      "perl-Socket": {
+        "version": "2.010",
+        "release": "3.el7"
+      },
+      "perl-Time-HiRes": {
+        "version": "1.9725",
+        "release": "3.el7"
+      },
+      "perl-Scalar-List-Utils": {
+        "version": "1.27",
+        "release": "248.el7"
+      },
+      "perl-File-Path": {
+        "version": "2.09",
+        "release": "2.el7"
+      },
+      "perl-threads": {
+        "version": "1.87",
+        "release": "4.el7"
+      },
+      "perl-Pod-Simple": {
+        "version": "3.28",
+        "release": "4.el7"
+      },
+      "perl": {
+        "version": "5.16.3",
+        "release": "286.el7"
+      },
+      "perl-TermReadKey": {
+        "version": "2.30",
+        "release": "20.el7"
+      },
+      "git": {
+        "version": "1.8.3.1",
+        "release": "6.el7_2.1"
+      },
+      "crontabs": {
+        "version": "1.11",
+        "release": "6.20121102git.el7"
+      },
+      "gpm-libs": {
+        "version": "1.20.7",
+        "release": "5.el7"
+      },
+      "vim-common": {
+        "version": "7.4.160",
+        "release": "1.el7"
+      },
+      "mpfr": {
+        "version": "3.1.1",
+        "release": "4.el7"
+      },
+      "python-hwdata": {
+        "version": "1.7.3",
+        "release": "4.el7"
+      },
+      "cpp": {
+        "version": "4.8.5",
+        "release": "4.el7"
+      },
+      "yum-plugin-ulninfo": {
+        "version": "0.2",
+        "release": "13.el7"
+      },
+      "glibc-headers": {
+        "version": "2.17",
+        "release": "106.0.1.el7_2.6"
+      },
+      "rhn-setup": {
+        "version": "2.0.2",
+        "release": "6.0.10.el7"
+      },
+      "gcc": {
+        "version": "4.8.5",
+        "release": "4.el7"
+      },
+      "rhn-check": {
+        "version": "2.0.2",
+        "release": "6.0.10.el7"
+      },
+      "kernel-uek-devel": {
+        "version": "3.8.13",
+        "release": "118.6.2.el7uek"
+      },
+      "libdrm": {
+        "version": "2.4.60",
+        "release": "3.el7"
+      },
+      "jdk1.8.0_92": {
+        "version": "1.8.0_92",
+        "release": "fcs"
+      },
+      "plymouth": {
+        "version": "0.8.9",
+        "release": "0.24.20140113.0.1.el7"
+      },
+      "libxcb": {
+        "version": "1.11",
+        "release": "4.el7"
+      },
+      "dnsmasq": {
+        "version": "2.66",
+        "release": "14.el7_1"
+      },
+      "libICE": {
+        "version": "1.0.9",
+        "release": "2.el7"
+      },
+      "gcc-c++": {
+        "version": "4.8.5",
+        "release": "4.el7"
+      },
+      "smartmontools": {
+        "version": "6.2",
+        "release": "4.el7"
+      },
+      "libsoup": {
+        "version": "2.48.1",
+        "release": "3.el7"
+      },
+      "compat-libstdc++-33": {
+        "version": "3.2.3",
+        "release": "72.el7"
+      },
+      "rsync": {
+        "version": "3.0.9",
+        "release": "17.el7"
+      },
+      "compat-libcap1": {
+        "version": "1.10",
+        "release": "7.el7"
+      },
+      "libgpg-error": {
+        "version": "1.12",
+        "release": "3.el7"
+      },
+      "bind-utils": {
+        "version": "9.9.4",
+        "release": "29.el7_2.3"
+      },
+      "sqlite": {
+        "version": "3.7.17",
+        "release": "8.el7"
+      },
+      "libX11": {
+        "version": "1.6.3",
+        "release": "2.el7"
+      },
+      "cpio": {
+        "version": "2.11",
+        "release": "24.el7"
+      },
+      "libXi": {
+        "version": "1.7.4",
+        "release": "2.el7"
+      },
+      "keyutils-libs": {
+        "version": "1.5.8",
+        "release": "3.el7"
+      },
+      "libXrandr": {
+        "version": "1.4.2",
+        "release": "2.el7"
+      },
+      "lua": {
+        "version": "5.1.4",
+        "release": "14.el7"
+      },
+      "libXxf86misc": {
+        "version": "1.0.3",
+        "release": "7.1.el7"
+      },
+      "diffutils": {
+        "version": "3.3",
+        "release": "4.el7"
+      },
+      "libXinerama": {
+        "version": "1.1.3",
+        "release": "2.1.el7"
+      },
+      "file-libs": {
+        "version": "5.11",
+        "release": "31.el7"
+      },
+      "libXxf86vm": {
+        "version": "1.1.3",
+        "release": "2.1.el7"
+      },
+      "gdbm": {
+        "version": "1.10",
+        "release": "8.el7"
+      },
+      "xorg-x11-utils": {
+        "version": "7.5",
+        "release": "13.1.el7"
+      },
+      "firewalld": {
+        "version": "0.3.9",
+        "release": "14.el7"
+      },
+      "libXmu": {
+        "version": "1.1.2",
+        "release": "2.el7"
+      },
+      "pciutils": {
+        "version": "3.2.1",
+        "release": "4.el7"
+      },
+      "postfix": {
+        "version": "2.10.1",
+        "release": "6.0.1.el7"
+      },
+      "microcode_ctl": {
+        "version": "2.1",
+        "release": "12.el7"
+      },
+      "parted": {
+        "version": "3.1",
+        "release": "23.el7"
+      },
+      "xfsprogs": {
+        "version": "3.2.2",
+        "release": "2.el7"
+      },
+      "wget": {
+        "version": "1.14",
+        "release": "10.el7_0.1"
+      },
+      "less": {
+        "version": "458",
+        "release": "9.el7"
+      },
+      "libnl3-cli": {
+        "version": "3.2.21",
+        "release": "10.0.1.el7"
+      },
+      "libassuan": {
+        "version": "2.1.0",
+        "release": "3.el7"
+      },
+      "oraclelinux-release": {
+        "version": "7.2",
+        "release": "1.0.5.el7"
+      },
+      "newt": {
+        "version": "0.52.15",
+        "release": "4.el7"
+      },
+      "NetworkManager-team": {
+        "version": "1.0.6",
+        "release": "29.0.1.el7_2"
+      },
+      "tuned": {
+        "version": "2.5.1",
+        "release": "4.el7_2.3"
+      },
+      "openssh-clients": {
+        "version": "6.6.1p1",
+        "release": "25.el7_2"
+      },
+      "kernel-tools": {
+        "version": "3.10.0",
+        "release": "327.18.2.el7"
+      },
+      "grub2": {
+        "version": "2.02",
+        "release": "0.34.0.1.el7_2"
+      },
+      "dracut-config-rescue": {
+        "version": "033",
+        "release": "360.0.1.el7_2"
+      },
+      "lvm2": {
+        "version": "2.02.130",
+        "release": "5.el7_2.2"
+      },
+      "openssl": {
+        "version": "1.0.1e",
+        "release": "51.el7_2.5"
+      },
+      "libssh2": {
+        "version": "1.4.3",
+        "release": "10.el7_2.1"
+      },
+      "libxml2-python": {
+        "version": "2.9.1",
+        "release": "6.0.1.el7_2.2"
+      },
+      "yum": {
+        "version": "3.4.3",
+        "release": "132.0.2.el7"
+      },
+      "ksh": {
+        "version": "20120801",
+        "release": "22.el7_1.3"
+      },
+      "sysstat": {
+        "version": "10.1.5",
+        "release": "7.el7"
+      },
+      "kernel-devel": {
+        "version": "3.10.0",
+        "release": "327.18.2.el7"
+      },
+      "libref_array": {
+        "version": "0.1.5",
+        "release": "25.el7"
+      },
+      "redhat-release-server": {
+        "version": "7.2",
+        "release": "9.0.1.el7"
+      },
+      "libverto-tevent": {
+        "version": "0.2.5",
+        "release": "4.el7"
+      },
+      "basesystem": {
+        "version": "10.0",
+        "release": "7.0.1.el7"
+      },
+      "gobject-introspection": {
+        "version": "1.42.0",
+        "release": "1.el7"
+      },
+      "kbd-misc": {
+        "version": "1.15.5",
+        "release": "11.el7"
+      },
+      "make": {
+        "version": "3.82",
+        "release": "21.el7"
+      },
+      "libstdc++": {
+        "version": "4.8.5",
+        "release": "4.el7"
+      },
+      "python-decorator": {
+        "version": "3.4.0",
+        "release": "3.el7"
+      },
+      "libcom_err": {
+        "version": "1.42.9",
+        "release": "7.el7"
+      },
+      "pygobject2": {
+        "version": "2.28.6",
+        "release": "11.el7"
+      },
+      "python-configobj": {
+        "version": "4.7.2",
+        "release": "7.el7"
+      },
+      "grep": {
+        "version": "2.20",
+        "release": "2.el7"
+      },
+      "elfutils-libelf": {
+        "version": "0.163",
+        "release": "3.el7"
+      },
+      "shared-mime-info": {
+        "version": "1.1",
+        "release": "9.el7"
+      },
+      "libedit": {
+        "version": "3.0",
+        "release": "12.20121213cvs.el7"
+      },
+      "findutils": {
+        "version": "4.5.11",
+        "release": "5.el7"
+      },
+      "hardlink": {
+        "version": "1.0",
+        "release": "19.el7"
+      },
+      "fxload": {
+        "version": "2002_04_11",
+        "release": "16.el7"
+      },
+      "libpath_utils": {
+        "version": "0.2.1",
+        "release": "25.el7"
+      },
+      "libestr": {
+        "version": "0.1.9",
+        "release": "2.el7"
+      },
+      "libpcap": {
+        "version": "1.5.3",
+        "release": "8.el7"
+      },
+      "dbus-glib": {
+        "version": "0.100",
+        "release": "7.el7"
+      },
+      "policycoreutils": {
+        "version": "2.2.5",
+        "release": "20.0.1.el7"
+      },
+      "libverto": {
+        "version": "0.2.5",
+        "release": "4.el7"
+      },
+      "quota-nls": {
+        "version": "4.01",
+        "release": "11.el7_2.1"
+      },
+      "glibc": {
+        "version": "2.17",
+        "release": "106.0.1.el7_2.6"
+      },
+      "biosdevname": {
+        "version": "0.6.2",
+        "release": "1.el7"
+      },
+      "nss-util": {
+        "version": "3.21.0",
+        "release": "2.2.el7_2"
+      },
+      "man-db": {
+        "version": "2.6.3",
+        "release": "9.el7"
+      },
+      "nss-softokn": {
+        "version": "3.16.2.3",
+        "release": "14.2.el7_2"
+      },
+      "libcap-ng": {
+        "version": "0.7.5",
+        "release": "4.el7"
+      },
+      "krb5-libs": {
+        "version": "1.13.2",
+        "release": "12.el7_2"
+      },
+      "libblkid": {
+        "version": "2.23.2",
+        "release": "26.el7_2.2"
+      },
+      "xz": {
+        "version": "5.1.2",
+        "release": "12alpha.el7"
+      },
+      "initscripts": {
+        "version": "9.49.30",
+        "release": "1.0.1.el7_2.2"
+      },
+      "libnfnetlink": {
+        "version": "1.0.1",
+        "release": "4.el7"
+      },
+      "systemd-sysv": {
+        "version": "219",
+        "release": "19.0.2.el7_2.9"
+      },
+      "lvm2-libs": {
+        "version": "2.02.130",
+        "release": "5.el7_2.2"
+      },
+      "vim-minimal": {
+        "version": "7.4.160",
+        "release": "1.el7"
+      },
+      "grub2-tools": {
+        "version": "2.02",
+        "release": "0.34.0.1.el7_2"
+      },
+      "libss": {
+        "version": "1.42.9",
+        "release": "7.el7"
+      },
+      "nss-sysinit": {
+        "version": "3.21.0",
+        "release": "9.0.1.el7_2"
+      },
+      "selinux-policy": {
+        "version": "3.13.1",
+        "release": "60.0.1.el7_2.3"
+      },
+      "kernel-tools-libs": {
+        "version": "3.10.0",
+        "release": "327.18.2.el7"
+      },
+      "python-perf": {
+        "version": "3.10.0",
+        "release": "327.18.2.el7"
+      },
+      "plymouth-core-libs": {
+        "version": "0.8.9",
+        "release": "0.24.20140113.0.1.el7"
+      },
+      "teamd": {
+        "version": "1.17",
+        "release": "6.el7_2"
+      },
+      "yum-metadata-parser": {
+        "version": "1.1.4",
+        "release": "10.el7"
+      },
+      "libtevent": {
+        "version": "0.9.26",
+        "release": "1.el7_2.1"
+      },
+      "rhnlib": {
+        "version": "2.5.65",
+        "release": "2.0.1.el7"
+      },
+      "openssh-server": {
+        "version": "6.6.1p1",
+        "release": "25.el7_2"
+      },
+      "libevent": {
+        "version": "2.0.21",
+        "release": "4.el7"
+      },
+      "selinux-policy-targeted": {
+        "version": "3.13.1",
+        "release": "60.0.1.el7_2.3"
+      },
+      "rpm": {
+        "version": "4.11.3",
+        "release": "17.el7"
+      },
+      "python-urlgrabber": {
+        "version": "3.10",
+        "release": "7.el7"
+      },
+      "nfs-utils": {
+        "version": "1.3.0",
+        "release": "0.21.el7_2"
+      },
+      "lsscsi": {
+        "version": "0.27",
+        "release": "3.el7"
+      },
+      "gnutls": {
+        "version": "3.3.8",
+        "release": "14.el7_2"
+      },
+      "NetworkManager-config-server": {
+        "version": "1.0.6",
+        "release": "29.0.1.el7_2"
+      },
+      "dmidecode": {
+        "version": "2.12",
+        "release": "9.el7"
+      },
+      "perl-Pod-Perldoc": {
+        "version": "3.20",
+        "release": "4.el7"
+      },
+      "perl-Pod-Usage": {
+        "version": "1.63",
+        "release": "3.el7"
+      },
+      "libgcc": {
+        "version": "4.8.5",
+        "release": "4.el7"
+      },
+      "perl-Exporter": {
+        "version": "5.68",
+        "release": "3.el7"
+      },
+      "linux-firmware": {
+        "version": "20150904",
+        "release": "43.git6ebf5d5.0.1.el7"
+      },
+      "perl-Carp": {
+        "version": "1.26",
+        "release": "244.el7"
+      },
+      "mysql-community-common": {
+        "version": "5.6.27",
+        "release": "2.el7"
+      },
+      "perl-File-Temp": {
+        "version": "0.23.01",
+        "release": "3.el7"
+      },
+      "ncurses-base": {
+        "version": "5.9",
+        "release": "13.20130511.el7"
+      },
+      "perl-Filter": {
+        "version": "1.49",
+        "release": "3.el7"
+      },
+      "xz-libs": {
+        "version": "5.1.2",
+        "release": "12alpha.el7"
+      },
+      "perl-Error": {
+        "version": "0.17020",
+        "release": "2.el7"
+      },
+      "libsepol": {
+        "version": "2.1.9",
+        "release": "3.el7"
+      },
+      "tree": {
+        "version": "1.6.0",
+        "release": "10.el7"
+      },
+      "info": {
+        "version": "5.1",
+        "release": "4.el7"
+      },
+      "vim-enhanced": {
+        "version": "7.4.160",
+        "release": "1.el7"
+      },
+      "popt": {
+        "version": "1.13",
+        "release": "16.el7"
+      },
+      "kernel-headers": {
+        "version": "3.10.0",
+        "release": "327.18.2.el7"
+      },
+      "libdtrace-ctf": {
+        "version": "0.5.0",
+        "release": "2.el7"
+      },
+      "dbus-libs": {
+        "version": "1.6.12",
+        "release": "13.0.1.el7"
+      },
+      "libXau": {
+        "version": "1.0.8",
+        "release": "2.1.el7"
+      },
+      "libSM": {
+        "version": "1.2.2",
+        "release": "2.el7"
+      },
+      "glib2": {
+        "version": "2.42.2",
+        "release": "5.el7"
+      },
+      "psmisc": {
+        "version": "22.20",
+        "release": "9.el7"
+      },
+      "libcap": {
+        "version": "2.22",
+        "release": "8.el7"
+      },
+      "bind-libs": {
+        "version": "9.9.4",
+        "release": "29.el7_2.3"
+      },
+      "libXext": {
+        "version": "1.3.3",
+        "release": "3.el7"
+      },
+      "gssproxy": {
+        "version": "0.4.1",
+        "release": "7.el7"
+      },
+      "libXtst": {
+        "version": "1.2.2",
+        "release": "2.1.el7"
+      },
+      "kbd-legacy": {
+        "version": "1.15.5",
+        "release": "11.el7"
+      },
+      "libXv": {
+        "version": "1.0.10",
+        "release": "2.el7"
+      },
+      "libXt": {
+        "version": "1.1.4",
+        "release": "6.1.el7"
+      },
+      "lm_sensors-libs": {
+        "version": "3.3.4",
+        "release": "11.el7"
+      },
+      "net-tools": {
+        "version": "2.0",
+        "release": "0.17.20131004git.el7"
+      },
+      "authconfig": {
+        "version": "6.2.8",
+        "release": "10.el7"
+      },
+      "pciutils-libs": {
+        "version": "3.2.1",
+        "release": "4.el7"
+      },
+      "bzip2": {
+        "version": "1.0.6",
+        "release": "13.el7"
+      },
+      "p11-kit-trust": {
+        "version": "0.20.7",
+        "release": "3.el7"
+      }
+    },
+    "root_group": "root",
+    "virtualbox": {
+      "host": {
+        "language": "ja_JP",
+        "revision": "106931",
+        "version": "5.0.20"
+      },
+      "guest": {
+        "guest_additions_version": "5.0.20",
+        "guest_additions_revision": "106931"
+      }
+    },
+    "recipes": [
+      "oracle-env",
+      "oracle-env::default",
+      "oracle-env::packages",
+      "oracle-env::bash_profile",
+      "oracle-env::ulimit",
+      "oracle-env::kernel-parameter",
+      "oracle-inventory::deploy",
+      "oracle-weblogic::responsefile",
+      "oracle-weblogic::install"
+    ],
+    "expanded_run_list": [
+      "oracle-env::default",
+      "oracle-env::packages",
+      "oracle-env::bash_profile",
+      "oracle-env::ulimit",
+      "oracle-env::kernel-parameter",
+      "oracle-inventory::deploy",
+      "oracle-weblogic::responsefile",
+      "oracle-weblogic::install"
+    ],
+    "roles": [
+
+    ],
+    "cookbooks": {
+      "oracle-env": {
+        "version": "0.1.0"
+      },
+      "oracle-inventory": {
+        "version": "0.1.0"
+      },
+      "oracle-weblogic": {
+        "version": "0.1.0"
+      }
+    }
+  },
+  "run_list": [
+    "recipe[oracle-env]",
+    "recipe[oracle-env::packages]",
+    "recipe[oracle-env::bash_profile]",
+    "recipe[oracle-env::ulimit]",
+    "recipe[oracle-env::kernel-parameter]",
+    "recipe[oracle-inventory::deploy]",
+    "recipe[oracle-weblogic::responsefile]",
+    "recipe[oracle-weblogic::install]"
+  ]
+}
